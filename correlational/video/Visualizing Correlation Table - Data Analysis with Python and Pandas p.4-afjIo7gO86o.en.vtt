@@ -1,0 +1,3328 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.800 --> 00:00:02.810 align:start position:0%
+ 
+what's<00:00:01.800><c> going</c><00:00:02.010><c> on</c><00:00:02.100><c> everybody</c><00:00:02.310><c> and</c><00:00:02.520><c> welcome</c><00:00:02.639><c> to</c>
+
+00:00:02.810 --> 00:00:02.820 align:start position:0%
+what's going on everybody and welcome to
+ 
+
+00:00:02.820 --> 00:00:05.990 align:start position:0%
+what's going on everybody and welcome to
+part<00:00:03.449><c> 4</c><00:00:03.929><c> of</c><00:00:03.959><c> the</c><00:00:04.589><c> data</c><00:00:05.009><c> science</c><00:00:05.460><c> and</c><00:00:05.700><c> data</c>
+
+00:00:05.990 --> 00:00:06.000 align:start position:0%
+part 4 of the data science and data
+ 
+
+00:00:06.000 --> 00:00:07.970 align:start position:0%
+part 4 of the data science and data
+analysis<00:00:06.569><c> with</c><00:00:06.690><c> Python</c><00:00:07.080><c> and</c><00:00:07.170><c> pandas</c><00:00:07.500><c> tutorial</c>
+
+00:00:07.970 --> 00:00:07.980 align:start position:0%
+analysis with Python and pandas tutorial
+ 
+
+00:00:07.980 --> 00:00:09.560 align:start position:0%
+analysis with Python and pandas tutorial
+series<00:00:08.099><c> in</c><00:00:08.550><c> this</c><00:00:08.790><c> video</c><00:00:08.970><c> we're</c><00:00:09.269><c> going</c><00:00:09.360><c> to</c><00:00:09.420><c> be</c>
+
+00:00:09.560 --> 00:00:09.570 align:start position:0%
+series in this video we're going to be
+ 
+
+00:00:09.570 --> 00:00:12.830 align:start position:0%
+series in this video we're going to be
+continuing<00:00:10.320><c> off</c><00:00:10.469><c> of</c><00:00:11.090><c> the</c><00:00:12.090><c> last</c><00:00:12.330><c> video</c><00:00:12.630><c> where</c>
+
+00:00:12.830 --> 00:00:12.840 align:start position:0%
+continuing off of the last video where
+ 
+
+00:00:12.840 --> 00:00:14.930 align:start position:0%
+continuing off of the last video where
+we<00:00:12.929><c> got</c><00:00:13.080><c> our</c><00:00:13.400><c> basically</c><00:00:14.400><c> our</c><00:00:14.490><c> correlation</c>
+
+00:00:14.930 --> 00:00:14.940 align:start position:0%
+we got our basically our correlation
+ 
+
+00:00:14.940 --> 00:00:16.220 align:start position:0%
+we got our basically our correlation
+table<00:00:15.420><c> and</c><00:00:15.570><c> what</c><00:00:15.660><c> we</c><00:00:15.750><c> want</c><00:00:15.900><c> to</c><00:00:15.960><c> do</c><00:00:16.020><c> in</c><00:00:16.139><c> this</c>
+
+00:00:16.220 --> 00:00:16.230 align:start position:0%
+table and what we want to do in this
+ 
+
+00:00:16.230 --> 00:00:19.370 align:start position:0%
+table and what we want to do in this
+video<00:00:16.379><c> is</c><00:00:16.560><c> focus</c><00:00:17.039><c> on</c><00:00:18.020><c> visualizing</c><00:00:19.020><c> that</c>
+
+00:00:19.370 --> 00:00:19.380 align:start position:0%
+video is focus on visualizing that
+ 
+
+00:00:19.380 --> 00:00:22.070 align:start position:0%
+video is focus on visualizing that
+correlation<00:00:19.890><c> table</c><00:00:20.279><c> and</c><00:00:20.820><c> some</c><00:00:21.810><c> of</c><00:00:21.900><c> the</c><00:00:21.960><c> other</c>
+
+00:00:22.070 --> 00:00:22.080 align:start position:0%
+correlation table and some of the other
+ 
+
+00:00:22.080 --> 00:00:24.320 align:start position:0%
+correlation table and some of the other
+things<00:00:22.740><c> that</c><00:00:22.890><c> are</c><00:00:23.010><c> gonna</c><00:00:23.130><c> come</c><00:00:23.490><c> along</c><00:00:23.519><c> with</c>
+
+00:00:24.320 --> 00:00:24.330 align:start position:0%
+things that are gonna come along with
+ 
+
+00:00:24.330 --> 00:00:28.160 align:start position:0%
+things that are gonna come along with
+doing<00:00:24.930><c> that</c><00:00:25.080><c> so</c><00:00:25.380><c> to</c><00:00:26.250><c> begin</c><00:00:26.900><c> let's</c><00:00:27.900><c> just</c><00:00:28.050><c> get</c>
+
+00:00:28.160 --> 00:00:28.170 align:start position:0%
+doing that so to begin let's just get
+ 
+
+00:00:28.170 --> 00:00:30.980 align:start position:0%
+doing that so to begin let's just get
+basically<00:00:29.010><c> where</c><00:00:29.340><c> we</c><00:00:29.490><c> were</c><00:00:29.789><c> so</c><00:00:30.210><c> import</c><00:00:30.570><c> pandas</c>
+
+00:00:30.980 --> 00:00:30.990 align:start position:0%
+basically where we were so import pandas
+ 
+
+00:00:30.990 --> 00:00:38.030 align:start position:0%
+basically where we were so import pandas
+as<00:00:31.230><c> PD</c><00:00:32.210><c> import</c><00:00:33.210><c> numpy</c><00:00:33.870><c> as</c><00:00:34.140><c> NP</c><00:00:35.070><c> and</c><00:00:36.649><c> at</c><00:00:37.649><c> least</c><00:00:37.800><c> to</c>
+
+00:00:38.030 --> 00:00:38.040 align:start position:0%
+as PD import numpy as NP and at least to
+ 
+
+00:00:38.040 --> 00:00:42.979 align:start position:0%
+as PD import numpy as NP and at least to
+start<00:00:38.340><c> PD</c><00:00:38.640><c> reads</c><00:00:39.620><c> CSV</c><00:00:40.620><c> and</c><00:00:41.300><c> we</c><00:00:42.300><c> can</c><00:00:42.450><c> do</c><00:00:42.600><c> data</c>
+
+00:00:42.979 --> 00:00:42.989 align:start position:0%
+start PD reads CSV and we can do data
+ 
+
+00:00:42.989 --> 00:00:47.690 align:start position:0%
+start PD reads CSV and we can do data
+sets<00:00:43.379><c> min</c><00:00:44.070><c> wage</c><00:00:44.370><c> dot</c><00:00:45.239><c> CSV</c><00:00:46.140><c> and</c><00:00:46.530><c> then</c><00:00:47.250><c> we</c><00:00:47.489><c> want</c>
+
+00:00:47.690 --> 00:00:47.700 align:start position:0%
+sets min wage dot CSV and then we want
+ 
+
+00:00:47.700 --> 00:00:49.910 align:start position:0%
+sets min wage dot CSV and then we want
+to<00:00:47.760><c> do</c><00:00:47.850><c> like</c><00:00:48.000><c> that</c><00:00:48.180><c> act</c><00:00:48.480><c> min</c><00:00:48.809><c> wage</c><00:00:49.110><c> in</c><00:00:49.680><c> that</c>
+
+00:00:49.910 --> 00:00:49.920 align:start position:0%
+to do like that act min wage in that
+ 
+
+00:00:49.920 --> 00:00:54.049 align:start position:0%
+to do like that act min wage in that
+loop<00:00:50.250><c> I</c><00:00:50.640><c> think</c><00:00:50.850><c> it</c><00:00:51.449><c> would</c><00:00:51.570><c> be</c><00:00:52.129><c> this</c><00:00:53.129><c> loop</c><00:00:53.520><c> here</c>
+
+00:00:54.049 --> 00:00:54.059 align:start position:0%
+loop I think it would be this loop here
+ 
+
+00:00:54.059 --> 00:00:58.849 align:start position:0%
+loop I think it would be this loop here
+right<00:00:54.660><c> just</c><00:00:54.980><c> want</c><00:00:55.980><c> I</c><00:00:56.070><c> don't</c><00:00:56.190><c> want</c><00:00:56.309><c> to</c><00:00:57.859><c> yeah</c>
+
+00:00:58.849 --> 00:00:58.859 align:start position:0%
+right just want I don't want to yeah
+ 
+
+00:00:58.859 --> 00:01:00.619 align:start position:0%
+right just want I don't want to yeah
+that<00:00:59.100><c> was</c><00:00:59.219><c> all</c><00:00:59.340><c> just</c><00:00:59.579><c> confirmation</c><00:01:00.000><c> of</c><00:01:00.420><c> what</c>
+
+00:01:00.619 --> 00:01:00.629 align:start position:0%
+that was all just confirmation of what
+ 
+
+00:01:00.629 --> 00:01:02.540 align:start position:0%
+that was all just confirmation of what
+was<00:01:00.809><c> the</c><00:01:00.960><c> problem</c><00:01:01.469><c> so</c><00:01:01.500><c> really</c><00:01:02.100><c> just</c><00:01:02.340><c> this</c>
+
+00:01:02.540 --> 00:01:02.550 align:start position:0%
+was the problem so really just this
+ 
+
+00:01:02.550 --> 00:01:05.450 align:start position:0%
+was the problem so really just this
+right<00:01:02.789><c> here</c><00:01:03.059><c> copy</c><00:01:03.449><c> that</c><00:01:03.979><c> so</c><00:01:04.979><c> this</c><00:01:05.100><c> is</c><00:01:05.159><c> from</c><00:01:05.309><c> the</c>
+
+00:01:05.450 --> 00:01:05.460 align:start position:0%
+right here copy that so this is from the
+ 
+
+00:01:05.460 --> 00:01:09.530 align:start position:0%
+right here copy that so this is from the
+previous<00:01:05.580><c> tutorial</c><00:01:06.979><c> and</c><00:01:08.150><c> then</c><00:01:09.150><c> we</c><00:01:09.270><c> want</c><00:01:09.450><c> to</c>
+
+00:01:09.530 --> 00:01:09.540 align:start position:0%
+previous tutorial and then we want to
+ 
+
+00:01:09.540 --> 00:01:14.570 align:start position:0%
+previous tutorial and then we want to
+set<00:01:09.869><c> the</c><00:01:10.590><c> min</c><00:01:10.860><c> wage</c><00:01:11.130><c> core</c><00:01:12.439><c> here</c>
+
+00:01:14.570 --> 00:01:14.580 align:start position:0%
+set the min wage core here
+ 
+
+00:01:14.580 --> 00:01:18.620 align:start position:0%
+set the min wage core here
+so<00:01:14.970><c> this</c><00:01:15.210><c> be</c><00:01:15.420><c> get</c><00:01:16.080><c> this</c><00:01:17.000><c> becomes</c><00:01:18.000><c> our</c><00:01:18.150><c> min</c><00:01:18.390><c> wage</c>
+
+00:01:18.620 --> 00:01:18.630 align:start position:0%
+so this be get this becomes our min wage
+ 
+
+00:01:18.630 --> 00:01:22.700 align:start position:0%
+so this be get this becomes our min wage
+core<00:01:19.880><c> and</c><00:01:20.880><c> it's</c><00:01:21.090><c> not</c><00:01:21.270><c> dot</c><00:01:21.600><c> head</c><00:01:21.990><c> that's</c><00:01:22.500><c> like</c><00:01:22.680><c> a</c>
+
+00:01:22.700 --> 00:01:22.710 align:start position:0%
+core and it's not dot head that's like a
+ 
+
+00:01:22.710 --> 00:01:27.950 align:start position:0%
+core and it's not dot head that's like a
+typo<00:01:23.310><c> really</c><00:01:24.229><c> and</c><00:01:25.229><c> then</c><00:01:25.560><c> min</c><00:01:26.460><c> wage</c><00:01:27.240><c> court</c>
+
+00:01:27.950 --> 00:01:27.960 align:start position:0%
+typo really and then min wage court
+ 
+
+00:01:27.960 --> 00:01:32.960 align:start position:0%
+typo really and then min wage court
+ahead<00:01:29.869><c> okay</c><00:01:30.869><c> cool</c><00:01:31.110><c> so</c><00:01:31.799><c> this</c><00:01:32.520><c> is</c><00:01:32.790><c> our</c>
+
+00:01:32.960 --> 00:01:32.970 align:start position:0%
+ahead okay cool so this is our
+ 
+
+00:01:32.970 --> 00:01:34.580 align:start position:0%
+ahead okay cool so this is our
+correlation<00:01:33.600><c> table</c><00:01:33.780><c> now</c><00:01:34.140><c> we</c><00:01:34.200><c> want</c><00:01:34.439><c> to</c><00:01:34.500><c> graph</c>
+
+00:01:34.580 --> 00:01:34.590 align:start position:0%
+correlation table now we want to graph
+ 
+
+00:01:34.590 --> 00:01:38.359 align:start position:0%
+correlation table now we want to graph
+it<00:01:34.890><c> so</c><00:01:35.659><c> if</c><00:01:36.659><c> you</c><00:01:36.810><c> haven't</c><00:01:37.110><c> already</c><00:01:37.380><c> open</c><00:01:38.280><c> up</c>
+
+00:01:38.359 --> 00:01:38.369 align:start position:0%
+it so if you haven't already open up
+ 
+
+00:01:38.369 --> 00:01:40.630 align:start position:0%
+it so if you haven't already open up
+terminal<00:01:38.579><c> command</c><00:01:39.540><c> prompt</c><00:01:39.960><c> pip</c><00:01:40.200><c> install</c>
+
+00:01:40.630 --> 00:01:40.640 align:start position:0%
+terminal command prompt pip install
+ 
+
+00:01:40.640 --> 00:01:42.920 align:start position:0%
+terminal command prompt pip install
+matplotlib<00:01:41.640><c> but</c><00:01:42.240><c> if</c><00:01:42.420><c> you've</c><00:01:42.600><c> been</c><00:01:42.750><c> following</c>
+
+00:01:42.920 --> 00:01:42.930 align:start position:0%
+matplotlib but if you've been following
+ 
+
+00:01:42.930 --> 00:01:44.420 align:start position:0%
+matplotlib but if you've been following
+the<00:01:43.110><c> series</c><00:01:43.380><c> you've</c><00:01:43.680><c> already</c><00:01:43.799><c> done</c><00:01:44.009><c> that</c>
+
+00:01:44.420 --> 00:01:44.430 align:start position:0%
+the series you've already done that
+ 
+
+00:01:44.430 --> 00:01:45.980 align:start position:0%
+the series you've already done that
+this<00:01:44.670><c> would</c><00:01:44.790><c> be</c><00:01:44.880><c> a</c><00:01:44.939><c> hard</c><00:01:45.090><c> series</c><00:01:45.479><c> to</c><00:01:45.600><c> jump</c><00:01:45.840><c> in</c>
+
+00:01:45.980 --> 00:01:45.990 align:start position:0%
+this would be a hard series to jump in
+ 
+
+00:01:45.990 --> 00:01:47.990 align:start position:0%
+this would be a hard series to jump in
+randomly<00:01:46.380><c> so</c><00:01:46.710><c> I'm</c><00:01:47.009><c> gonna</c><00:01:47.100><c> assume</c><00:01:47.280><c> everybody's</c>
+
+00:01:47.990 --> 00:01:48.000 align:start position:0%
+randomly so I'm gonna assume everybody's
+ 
+
+00:01:48.000 --> 00:01:51.380 align:start position:0%
+randomly so I'm gonna assume everybody's
+cut<00:01:48.259><c> the</c><00:01:49.259><c> things</c><00:01:49.500><c> we've</c><00:01:49.680><c> installed</c><00:01:50.070><c> so</c><00:01:50.850><c> far</c><00:01:51.149><c> so</c>
+
+00:01:51.380 --> 00:01:51.390 align:start position:0%
+cut the things we've installed so far so
+ 
+
+00:01:51.390 --> 00:01:55.039 align:start position:0%
+cut the things we've installed so far so
+first<00:01:51.689><c> of</c><00:01:51.810><c> all</c><00:01:52.310><c> with</c><00:01:53.310><c> matplotlib</c><00:01:53.610><c> we</c><00:01:54.570><c> just</c><00:01:54.840><c> go</c>
+
+00:01:55.039 --> 00:01:55.049 align:start position:0%
+first of all with matplotlib we just go
+ 
+
+00:01:55.049 --> 00:01:57.709 align:start position:0%
+first of all with matplotlib we just go
+we're<00:01:55.290><c> just</c><00:01:55.380><c> gonna</c><00:01:55.560><c> do</c><00:01:55.710><c> import</c><00:01:56.070><c> mat</c><00:01:56.430><c> plot</c><00:01:56.759><c> mat</c>
+
+00:01:57.709 --> 00:01:57.719 align:start position:0%
+we're just gonna do import mat plot mat
+ 
+
+00:01:57.719 --> 00:02:03.469 align:start position:0%
+we're just gonna do import mat plot mat
+plot<00:01:58.469><c> bread</c><00:01:59.460><c> Lib</c><00:02:00.360><c> dot</c><00:02:01.020><c> pie</c><00:02:01.350><c> plot</c><00:02:01.619><c> as</c><00:02:02.180><c> PLT</c><00:02:03.180><c> and</c>
+
+00:02:03.469 --> 00:02:03.479 align:start position:0%
+plot bread Lib dot pie plot as PLT and
+ 
+
+00:02:03.479 --> 00:02:08.180 align:start position:0%
+plot bread Lib dot pie plot as PLT and
+then<00:02:04.170><c> we</c><00:02:04.320><c> can</c><00:02:04.469><c> do</c><00:02:04.560><c> PLT</c><00:02:05.009><c> mat</c><00:02:05.610><c> show</c><00:02:05.939><c> and</c><00:02:07.190><c> we're</c>
+
+00:02:08.180 --> 00:02:08.190 align:start position:0%
+then we can do PLT mat show and we're
+ 
+
+00:02:08.190 --> 00:02:10.010 align:start position:0%
+then we can do PLT mat show and we're
+just<00:02:08.280><c> gonna</c><00:02:08.399><c> match</c><00:02:08.759><c> show</c><00:02:09.000><c> that</c><00:02:09.179><c> data</c><00:02:09.420><c> frame</c><00:02:09.690><c> so</c>
+
+00:02:10.010 --> 00:02:10.020 align:start position:0%
+just gonna match show that data frame so
+ 
+
+00:02:10.020 --> 00:02:12.260 align:start position:0%
+just gonna match show that data frame so
+min<00:02:10.619><c> wage</c>
+
+00:02:12.260 --> 00:02:12.270 align:start position:0%
+min wage
+ 
+
+00:02:12.270 --> 00:02:17.050 align:start position:0%
+min wage
+or<00:02:13.070><c> and</c><00:02:14.690><c> that</c><00:02:15.690><c> should</c><00:02:15.870><c> be</c><00:02:15.960><c> enough</c><00:02:16.260><c> Oh</c>
+
+00:02:17.050 --> 00:02:17.060 align:start position:0%
+or and that should be enough Oh
+ 
+
+00:02:17.060 --> 00:02:19.790 align:start position:0%
+or and that should be enough Oh
+PLT<00:02:18.060><c> -</c><00:02:18.330><c> we</c><00:02:18.540><c> probably</c><00:02:18.750><c> have</c><00:02:19.140><c> to</c><00:02:19.200><c> call</c><00:02:19.320><c> P</c><00:02:19.500><c> LTS</c>
+
+00:02:19.790 --> 00:02:19.800 align:start position:0%
+PLT - we probably have to call P LTS
+ 
+
+00:02:19.800 --> 00:02:22.520 align:start position:0%
+PLT - we probably have to call P LTS
+show<00:02:20.070><c> in</c><00:02:20.280><c> here</c><00:02:20.580><c> yeah</c><00:02:20.970><c> okay</c><00:02:21.810><c> mmm</c>
+
+00:02:22.520 --> 00:02:22.530 align:start position:0%
+show in here yeah okay mmm
+ 
+
+00:02:22.530 --> 00:02:25.610 align:start position:0%
+show in here yeah okay mmm
+so<00:02:22.790><c> okay</c><00:02:23.790><c> that</c><00:02:24.000><c> got</c><00:02:24.150><c> us</c><00:02:24.270><c> pretty</c><00:02:25.050><c> far</c><00:02:25.260><c> pretty</c>
+
+00:02:25.610 --> 00:02:25.620 align:start position:0%
+so okay that got us pretty far pretty
+ 
+
+00:02:25.620 --> 00:02:27.890 align:start position:0%
+so okay that got us pretty far pretty
+quick<00:02:25.800><c> pretty</c><00:02:26.040><c> simple</c><00:02:26.750><c> unfortunately</c><00:02:27.750><c> as</c>
+
+00:02:27.890 --> 00:02:27.900 align:start position:0%
+quick pretty simple unfortunately as
+ 
+
+00:02:27.900 --> 00:02:30.080 align:start position:0%
+quick pretty simple unfortunately as
+you'll<00:02:28.350><c> find</c><00:02:28.590><c> with</c><00:02:28.800><c> is</c><00:02:29.520><c> the</c><00:02:29.730><c> case</c><00:02:29.910><c> with</c>
+
+00:02:30.080 --> 00:02:30.090 align:start position:0%
+you'll find with is the case with
+ 
+
+00:02:30.090 --> 00:02:33.020 align:start position:0%
+you'll find with is the case with
+matplotlib<00:02:30.390><c> all</c><00:02:30.900><c> the</c><00:02:31.230><c> time</c><00:02:31.550><c> you</c><00:02:32.550><c> really</c><00:02:32.910><c> are</c>
+
+00:02:33.020 --> 00:02:33.030 align:start position:0%
+matplotlib all the time you really are
+ 
+
+00:02:33.030 --> 00:02:34.430 align:start position:0%
+matplotlib all the time you really are
+gonna<00:02:33.150><c> likely</c><00:02:33.600><c> need</c><00:02:33.840><c> to</c><00:02:33.930><c> do</c><00:02:34.050><c> a</c><00:02:34.080><c> lot</c><00:02:34.290><c> of</c>
+
+00:02:34.430 --> 00:02:34.440 align:start position:0%
+gonna likely need to do a lot of
+ 
+
+00:02:34.440 --> 00:02:37.340 align:start position:0%
+gonna likely need to do a lot of
+customization<00:02:35.040><c> so</c><00:02:36.030><c> if</c><00:02:36.570><c> you</c><00:02:36.690><c> want</c><00:02:36.870><c> to</c><00:02:36.960><c> we</c><00:02:37.230><c> can</c>
+
+00:02:37.340 --> 00:02:37.350 align:start position:0%
+customization so if you want to we can
+ 
+
+00:02:37.350 --> 00:02:39.080 align:start position:0%
+customization so if you want to we can
+come<00:02:37.500><c> into</c><00:02:37.770><c> here</c><00:02:38.010><c> I</c><00:02:38.490><c> don't</c><00:02:38.760><c> even</c><00:02:38.820><c> know</c><00:02:38.940><c> how</c><00:02:39.000><c> to</c>
+
+00:02:39.080 --> 00:02:39.090 align:start position:0%
+come into here I don't even know how to
+ 
+
+00:02:39.090 --> 00:02:40.670 align:start position:0%
+come into here I don't even know how to
+navigate<00:02:39.240><c> my</c><00:02:39.600><c> own</c><00:02:39.720><c> site</c><00:02:39.960><c> apparently</c><00:02:40.170><c> there</c><00:02:40.620><c> we</c>
+
+00:02:40.670 --> 00:02:40.680 align:start position:0%
+navigate my own site apparently there we
+ 
+
+00:02:40.680 --> 00:02:42.800 align:start position:0%
+navigate my own site apparently there we
+go<00:02:40.830><c> data</c><00:02:41.070><c> vis</c><00:02:41.330><c> coming</c><00:02:42.330><c> here</c><00:02:42.510><c> and</c><00:02:42.570><c> you</c><00:02:42.660><c> can</c>
+
+00:02:42.800 --> 00:02:42.810 align:start position:0%
+go data vis coming here and you can
+ 
+
+00:02:42.810 --> 00:02:44.540 align:start position:0%
+go data vis coming here and you can
+learn<00:02:42.900><c> all</c><00:02:43.170><c> the</c><00:02:43.620><c> stuff</c><00:02:43.830><c> about</c><00:02:43.980><c> customizing</c>
+
+00:02:44.540 --> 00:02:44.550 align:start position:0%
+learn all the stuff about customizing
+ 
+
+00:02:44.550 --> 00:02:47.540 align:start position:0%
+learn all the stuff about customizing
+matplotlib<00:02:45.420><c> if</c><00:02:45.840><c> you</c><00:02:45.930><c> want</c><00:02:46.280><c> I'm</c><00:02:47.280><c> not</c><00:02:47.400><c> gonna</c>
+
+00:02:47.540 --> 00:02:47.550 align:start position:0%
+matplotlib if you want I'm not gonna
+ 
+
+00:02:47.550 --> 00:02:48.860 align:start position:0%
+matplotlib if you want I'm not gonna
+spend<00:02:47.820><c> too</c><00:02:47.940><c> much</c><00:02:48.000><c> time</c><00:02:48.090><c> on</c><00:02:48.240><c> that</c><00:02:48.450><c> but</c><00:02:48.660><c> we</c><00:02:48.840><c> are</c>
+
+00:02:48.860 --> 00:02:48.870 align:start position:0%
+spend too much time on that but we are
+ 
+
+00:02:48.870 --> 00:02:50.630 align:start position:0%
+spend too much time on that but we are
+gonna<00:02:49.110><c> do</c><00:02:49.320><c> at</c><00:02:49.590><c> least</c><00:02:49.770><c> some</c><00:02:50.010><c> customization</c>
+
+00:02:50.630 --> 00:02:50.640 align:start position:0%
+gonna do at least some customization
+ 
+
+00:02:50.640 --> 00:02:52.340 align:start position:0%
+gonna do at least some customization
+here<00:02:50.970><c> just</c><00:02:51.210><c> to</c><00:02:51.300><c> make</c><00:02:51.450><c> this</c><00:02:51.600><c> work</c><00:02:51.870><c> because</c><00:02:52.320><c> I</c>
+
+00:02:52.340 --> 00:02:52.350 align:start position:0%
+here just to make this work because I
+ 
+
+00:02:52.350 --> 00:02:56.210 align:start position:0%
+here just to make this work because I
+feel<00:02:52.650><c> like</c><00:02:52.680><c> one</c><00:02:53.160><c> the</c><00:02:53.430><c> colors</c><00:02:53.760><c> are</c><00:02:53.940><c> wrong</c><00:02:54.180><c> -</c><00:02:55.220><c> the</c>
+
+00:02:56.210 --> 00:02:56.220 align:start position:0%
+feel like one the colors are wrong - the
+ 
+
+00:02:56.220 --> 00:02:58.610 align:start position:0%
+feel like one the colors are wrong - the
+labels<00:02:56.580><c> being</c><00:02:56.760><c> numbers</c><00:02:57.240><c> means</c><00:02:57.930><c> nothing</c><00:02:58.410><c> to</c><00:02:58.440><c> us</c>
+
+00:02:58.610 --> 00:02:58.620 align:start position:0%
+labels being numbers means nothing to us
+ 
+
+00:02:58.620 --> 00:03:00.500 align:start position:0%
+labels being numbers means nothing to us
+it's<00:02:58.950><c> not</c><00:02:59.100><c> helpful</c><00:02:59.430><c> it's</c><00:03:00.120><c> not</c><00:03:00.270><c> helpful</c>
+
+00:03:00.500 --> 00:03:00.510 align:start position:0%
+it's not helpful it's not helpful
+ 
+
+00:03:00.510 --> 00:03:04.040 align:start position:0%
+it's not helpful it's not helpful
+visible<00:03:01.880><c> visualization</c><00:03:02.880><c> so</c><00:03:03.510><c> how</c><00:03:03.630><c> can</c><00:03:03.690><c> we</c><00:03:03.900><c> make</c>
+
+00:03:04.040 --> 00:03:04.050 align:start position:0%
+visible visualization so how can we make
+ 
+
+00:03:04.050 --> 00:03:05.660 align:start position:0%
+visible visualization so how can we make
+this<00:03:04.200><c> a</c><00:03:04.470><c> little</c><00:03:04.740><c> better</c><00:03:04.920><c> well</c><00:03:05.190><c> right</c><00:03:05.490><c> out</c><00:03:05.610><c> of</c>
+
+00:03:05.660 --> 00:03:05.670 align:start position:0%
+this a little better well right out of
+ 
+
+00:03:05.670 --> 00:03:07.940 align:start position:0%
+this a little better well right out of
+the<00:03:05.760><c> gate</c><00:03:05.940><c> I</c><00:03:06.120><c> would</c><00:03:06.420><c> think</c><00:03:06.630><c> okay</c><00:03:07.200><c> hey</c><00:03:07.560><c> here's</c>
+
+00:03:07.940 --> 00:03:07.950 align:start position:0%
+the gate I would think okay hey here's
+ 
+
+00:03:07.950 --> 00:03:11.150 align:start position:0%
+the gate I would think okay hey here's
+what<00:03:08.100><c> we</c><00:03:08.190><c> could</c><00:03:08.340><c> do</c><00:03:08.570><c> we</c><00:03:09.570><c> could</c><00:03:09.600><c> say</c><00:03:10.160><c> labels</c>
+
+00:03:11.150 --> 00:03:11.160 align:start position:0%
+what we could do we could say labels
+ 
+
+00:03:11.160 --> 00:03:12.680 align:start position:0%
+what we could do we could say labels
+equals<00:03:11.820><c> and</c><00:03:12.090><c> then</c><00:03:12.150><c> just</c><00:03:12.360><c> do</c><00:03:12.450><c> a</c><00:03:12.480><c> list</c>
+
+00:03:12.680 --> 00:03:12.690 align:start position:0%
+equals and then just do a list
+ 
+
+00:03:12.690 --> 00:03:17.800 align:start position:0%
+equals and then just do a list
+comprehension<00:03:13.050><c> so</c><00:03:13.950><c> C</c><00:03:14.430><c> for</c><00:03:14.940><c> C</c><00:03:15.330><c> in</c><00:03:15.920><c> min</c><00:03:16.920><c> wage</c>
+
+00:03:17.800 --> 00:03:17.810 align:start position:0%
+comprehension so C for C in min wage
+ 
+
+00:03:17.810 --> 00:03:21.080 align:start position:0%
+comprehension so C for C in min wage
+core<00:03:18.810><c> I</c><00:03:19.080><c> see</c><00:03:19.350><c> the</c><00:03:19.530><c> issue</c><00:03:19.920><c> there</c><00:03:20.310><c> anyway</c><00:03:20.880><c> at</c>
+
+00:03:21.080 --> 00:03:21.090 align:start position:0%
+core I see the issue there anyway at
+ 
+
+00:03:21.090 --> 00:03:24.650 align:start position:0%
+core I see the issue there anyway at
+columns<00:03:21.540><c> and</c><00:03:21.840><c> then</c><00:03:21.990><c> fix</c><00:03:22.440><c> this</c><00:03:22.650><c> and</c><00:03:23.480><c> then</c><00:03:24.480><c> let's</c>
+
+00:03:24.650 --> 00:03:24.660 align:start position:0%
+columns and then fix this and then let's
+ 
+
+00:03:24.660 --> 00:03:26.720 align:start position:0%
+columns and then fix this and then let's
+just<00:03:24.780><c> do</c><00:03:24.900><c> like</c><00:03:25.050><c> the</c><00:03:25.140><c> first</c><00:03:25.380><c> two</c><00:03:25.530><c> letters</c><00:03:25.730><c> so</c>
+
+00:03:26.720 --> 00:03:26.730 align:start position:0%
+just do like the first two letters so
+ 
+
+00:03:26.730 --> 00:03:34.220 align:start position:0%
+just do like the first two letters so
+that<00:03:27.240><c> would</c><00:03:27.510><c> be</c><00:03:27.630><c> like</c><00:03:27.840><c> the</c><00:03:27.959><c> first</c><00:03:33.140><c> it's</c><00:03:34.140><c> gonna</c>
+
+00:03:34.220 --> 00:03:34.230 align:start position:0%
+that would be like the first it's gonna
+ 
+
+00:03:34.230 --> 00:03:36.170 align:start position:0%
+that would be like the first it's gonna
+be<00:03:34.380><c> a</c><00:03:34.410><c> long</c><00:03:34.760><c> day</c>
+
+00:03:36.170 --> 00:03:36.180 align:start position:0%
+be a long day
+ 
+
+00:03:36.180 --> 00:03:39.170 align:start position:0%
+be a long day
+okay<00:03:36.690><c> so</c><00:03:37.400><c> so</c><00:03:38.400><c> this</c><00:03:38.520><c> would</c><00:03:38.640><c> be</c><00:03:38.730><c> like</c><00:03:38.760><c> you</c><00:03:39.060><c> know</c>
+
+00:03:39.170 --> 00:03:39.180 align:start position:0%
+okay so so this would be like you know
+ 
+
+00:03:39.180 --> 00:03:42.560 align:start position:0%
+okay so so this would be like you know
+if<00:03:39.270><c> it's</c><00:03:39.390><c> Alabama</c><00:03:39.840><c> al</c><00:03:40.140><c> Michigan</c><00:03:41.040><c> mi</c><00:03:41.490><c> and</c><00:03:42.030><c> so</c><00:03:42.360><c> on</c>
+
+00:03:42.560 --> 00:03:42.570 align:start position:0%
+if it's Alabama al Michigan mi and so on
+ 
+
+00:03:42.570 --> 00:03:44.390 align:start position:0%
+if it's Alabama al Michigan mi and so on
+so<00:03:43.200><c> we</c><00:03:43.290><c> could</c><00:03:43.440><c> do</c><00:03:43.530><c> something</c><00:03:43.860><c> really</c><00:03:43.890><c> basic</c>
+
+00:03:44.390 --> 00:03:44.400 align:start position:0%
+so we could do something really basic
+ 
+
+00:03:44.400 --> 00:03:45.920 align:start position:0%
+so we could do something really basic
+like<00:03:44.730><c> that</c><00:03:44.910><c> and</c><00:03:45.120><c> then</c><00:03:45.209><c> let's</c><00:03:45.420><c> fix</c><00:03:45.600><c> some</c><00:03:45.690><c> of</c><00:03:45.810><c> the</c>
+
+00:03:45.920 --> 00:03:45.930 align:start position:0%
+like that and then let's fix some of the
+ 
+
+00:03:45.930 --> 00:03:49.160 align:start position:0%
+like that and then let's fix some of the
+other<00:03:46.080><c> things</c><00:03:46.470><c> so</c><00:03:47.340><c> fig</c><00:03:47.670><c> equals</c><00:03:48.209><c> P</c><00:03:48.510><c> LT</c><00:03:48.810><c> dot</c>
+
+00:03:49.160 --> 00:03:49.170 align:start position:0%
+other things so fig equals P LT dot
+ 
+
+00:03:49.170 --> 00:03:53.060 align:start position:0%
+other things so fig equals P LT dot
+figure<00:03:49.890><c> and</c><00:03:50.190><c> then</c><00:03:50.820><c> figs</c><00:03:51.270><c> size</c><00:03:51.810><c> will</c><00:03:52.470><c> be</c><00:03:52.709><c> will</c>
+
+00:03:53.060 --> 00:03:53.070 align:start position:0%
+figure and then figs size will be will
+ 
+
+00:03:53.070 --> 00:03:56.420 align:start position:0%
+figure and then figs size will be will
+just<00:03:53.250><c> make</c><00:03:53.370><c> this</c><00:03:53.490><c> a</c><00:03:53.700><c> 12</c><00:03:54.000><c> by</c><00:03:54.150><c> 12</c><00:03:54.540><c> so</c><00:03:55.350><c> if</c><00:03:56.010><c> you</c><00:03:56.190><c> want</c>
+
+00:03:56.420 --> 00:03:56.430 align:start position:0%
+just make this a 12 by 12 so if you want
+ 
+
+00:03:56.430 --> 00:03:58.580 align:start position:0%
+just make this a 12 by 12 so if you want
+to<00:03:56.490><c> start</c><00:03:56.610><c> customizing</c><00:03:56.940><c> matplotlib</c><00:03:57.690><c> you</c><00:03:58.440><c> have</c>
+
+00:03:58.580 --> 00:03:58.590 align:start position:0%
+to start customizing matplotlib you have
+ 
+
+00:03:58.590 --> 00:04:00.140 align:start position:0%
+to start customizing matplotlib you have
+to<00:03:58.770><c> kind</c><00:03:58.950><c> of</c><00:03:58.980><c> even</c><00:03:59.160><c> pull</c><00:03:59.490><c> it</c><00:03:59.610><c> out</c><00:03:59.700><c> even</c><00:03:59.940><c> further</c>
+
+00:04:00.140 --> 00:04:00.150 align:start position:0%
+to kind of even pull it out even further
+ 
+
+00:04:00.150 --> 00:04:02.390 align:start position:0%
+to kind of even pull it out even further
+so<00:04:00.600><c> first</c><00:04:01.200><c> of</c><00:04:01.350><c> all</c><00:04:01.440><c> we've</c><00:04:01.650><c> pulled</c><00:04:01.860><c> we've</c>
+
+00:04:02.390 --> 00:04:02.400 align:start position:0%
+so first of all we've pulled we've
+ 
+
+00:04:02.400 --> 00:04:03.920 align:start position:0%
+so first of all we've pulled we've
+stopped<00:04:02.640><c> you</c><00:04:02.820><c> well</c><00:04:03.150><c> in</c><00:04:03.390><c> this</c><00:04:03.600><c> case</c><00:04:03.780><c> we</c>
+
+00:04:03.920 --> 00:04:03.930 align:start position:0%
+stopped you well in this case we
+ 
+
+00:04:03.930 --> 00:04:05.449 align:start position:0%
+stopped you well in this case we
+actually<00:04:04.200><c> didn't</c><00:04:04.410><c> do</c><00:04:04.560><c> like</c><00:04:04.740><c> dot</c><00:04:04.950><c> values</c><00:04:05.340><c> or</c>
+
+00:04:05.449 --> 00:04:05.459 align:start position:0%
+actually didn't do like dot values or
+ 
+
+00:04:05.459 --> 00:04:06.860 align:start position:0%
+actually didn't do like dot values or
+anything<00:04:05.640><c> we</c><00:04:05.850><c> just</c><00:04:05.880><c> passed</c><00:04:06.270><c> the</c><00:04:06.390><c> entire</c><00:04:06.630><c> data</c>
+
+00:04:06.860 --> 00:04:06.870 align:start position:0%
+anything we just passed the entire data
+ 
+
+00:04:06.870 --> 00:04:10.010 align:start position:0%
+anything we just passed the entire data
+frame<00:04:07.110><c> and</c><00:04:07.140><c> it</c><00:04:07.350><c> works</c><00:04:07.530><c> so</c><00:04:07.830><c> that's</c><00:04:08.489><c> great</c><00:04:09.020><c> but</c>
+
+00:04:10.010 --> 00:04:10.020 align:start position:0%
+frame and it works so that's great but
+ 
+
+00:04:10.020 --> 00:04:11.390 align:start position:0%
+frame and it works so that's great but
+then<00:04:10.140><c> if</c><00:04:10.320><c> you</c><00:04:10.410><c> want</c><00:04:10.560><c> to</c><00:04:10.590><c> start</c><00:04:10.739><c> modifying</c>
+
+00:04:11.390 --> 00:04:11.400 align:start position:0%
+then if you want to start modifying
+ 
+
+00:04:11.400 --> 00:04:14.090 align:start position:0%
+then if you want to start modifying
+things<00:04:11.850><c> you</c><00:04:12.030><c> can't</c><00:04:12.239><c> modify</c><00:04:12.480><c> PLT</c><00:04:13.320><c> you</c><00:04:13.860><c> have</c><00:04:14.010><c> to</c>
+
+00:04:14.090 --> 00:04:14.100 align:start position:0%
+things you can't modify PLT you have to
+ 
+
+00:04:14.100 --> 00:04:16.909 align:start position:0%
+things you can't modify PLT you have to
+modify<00:04:14.370><c> an</c><00:04:14.580><c> axis</c><00:04:15.030><c> well</c><00:04:15.330><c> to</c><00:04:15.630><c> have</c><00:04:15.720><c> an</c><00:04:15.840><c> axes</c><00:04:16.260><c> you</c>
+
+00:04:16.909 --> 00:04:16.919 align:start position:0%
+modify an axis well to have an axes you
+ 
+
+00:04:16.919 --> 00:04:19.400 align:start position:0%
+modify an axis well to have an axes you
+have<00:04:17.190><c> to</c><00:04:17.370><c> have</c><00:04:17.609><c> a</c><00:04:18.290><c> subplot</c>
+
+00:04:19.400 --> 00:04:19.410 align:start position:0%
+have to have a subplot
+ 
+
+00:04:19.410 --> 00:04:23.510 align:start position:0%
+have to have a subplot
+to<00:04:19.980><c> have</c><00:04:20.130><c> a</c><00:04:20.160><c> subplot</c><00:04:20.630><c> you</c><00:04:21.630><c> need</c><00:04:21.810><c> a</c><00:04:21.840><c> figure</c><00:04:22.520><c> so</c>
+
+00:04:23.510 --> 00:04:23.520 align:start position:0%
+to have a subplot you need a figure so
+ 
+
+00:04:23.520 --> 00:04:25.640 align:start position:0%
+to have a subplot you need a figure so
+so<00:04:24.000><c> we</c><00:04:24.120><c> have</c><00:04:24.240><c> our</c><00:04:24.330><c> figure</c><00:04:24.630><c> now</c><00:04:25.050><c> we</c><00:04:25.110><c> want</c><00:04:25.380><c> to</c><00:04:25.470><c> do</c>
+
+00:04:25.640 --> 00:04:25.650 align:start position:0%
+so we have our figure now we want to do
+ 
+
+00:04:25.650 --> 00:04:26.060 align:start position:0%
+so we have our figure now we want to do
+our
+
+00:04:26.060 --> 00:04:26.070 align:start position:0%
+our
+ 
+
+00:04:26.070 --> 00:04:27.890 align:start position:0%
+our
+see<00:04:26.190><c> so</c><00:04:26.460><c> we're</c><00:04:26.580><c> gonna</c><00:04:26.670><c> say</c><00:04:26.820><c> axes</c><00:04:27.330><c> equals</c><00:04:27.690><c> fig</c>
+
+00:04:27.890 --> 00:04:27.900 align:start position:0%
+see so we're gonna say axes equals fig
+ 
+
+00:04:27.900 --> 00:04:31.430 align:start position:0%
+see so we're gonna say axes equals fig
+dot<00:04:28.110><c> add</c><00:04:28.610><c> subplot</c><00:04:29.610><c> and</c><00:04:29.940><c> in</c><00:04:30.570><c> here</c><00:04:30.840><c> I'm</c><00:04:31.020><c> going</c><00:04:31.320><c> to</c>
+
+00:04:31.430 --> 00:04:31.440 align:start position:0%
+dot add subplot and in here I'm going to
+ 
+
+00:04:31.440 --> 00:04:35.570 align:start position:0%
+dot add subplot and in here I'm going to
+pass<00:04:31.650><c> 1</c><00:04:32.100><c> 1</c><00:04:32.400><c> 1</c><00:04:32.760><c> what</c><00:04:33.420><c> this</c><00:04:33.570><c> means</c><00:04:33.840><c> is</c><00:04:34.340><c> this</c><00:04:35.340><c> is</c><00:04:35.550><c> a</c>
+
+00:04:35.570 --> 00:04:35.580 align:start position:0%
+pass 1 1 1 what this means is this is a
+ 
+
+00:04:35.580 --> 00:04:41.510 align:start position:0%
+pass 1 1 1 what this means is this is a
+1<00:04:36.090><c> by</c><00:04:36.450><c> 1</c><00:04:38.930><c> let's</c><00:04:39.930><c> say</c><00:04:39.990><c> the</c><00:04:40.140><c> figure</c><00:04:40.500><c> all</c><00:04:41.280><c> the</c>
+
+00:04:41.510 --> 00:04:41.520 align:start position:0%
+1 by 1 let's say the figure all the
+ 
+
+00:04:41.520 --> 00:04:43.520 align:start position:0%
+1 by 1 let's say the figure all the
+subplots<00:04:41.940><c> on</c><00:04:42.120><c> the</c><00:04:42.240><c> figure</c><00:04:42.540><c> are</c><00:04:42.780><c> in</c><00:04:42.990><c> a</c><00:04:43.080><c> 1</c><00:04:43.320><c> by</c><00:04:43.500><c> 1</c>
+
+00:04:43.520 --> 00:04:43.530 align:start position:0%
+subplots on the figure are in a 1 by 1
+ 
+
+00:04:43.530 --> 00:04:47.690 align:start position:0%
+subplots on the figure are in a 1 by 1
+grid<00:04:44.070><c> and</c><00:04:44.280><c> this</c><00:04:44.670><c> is</c><00:04:44.850><c> number</c><00:04:45.300><c> 1</c><00:04:46.160><c> so</c><00:04:47.160><c> this</c><00:04:47.550><c> just</c>
+
+00:04:47.690 --> 00:04:47.700 align:start position:0%
+grid and this is number 1 so this just
+ 
+
+00:04:47.700 --> 00:04:50.530 align:start position:0%
+grid and this is number 1 so this just
+means<00:04:47.850><c> there's</c><00:04:48.060><c> gonna</c><00:04:48.180><c> be</c><00:04:48.270><c> one</c><00:04:48.390><c> graph</c><00:04:49.340><c> now</c>
+
+00:04:50.530 --> 00:04:50.540 align:start position:0%
+means there's gonna be one graph now
+ 
+
+00:04:50.540 --> 00:04:54.560 align:start position:0%
+means there's gonna be one graph now
+what<00:04:51.540><c> we</c><00:04:51.630><c> want</c><00:04:51.810><c> to</c><00:04:51.870><c> do</c><00:04:51.960><c> is</c><00:04:52.080><c> a</c><00:04:52.230><c> X</c><00:04:52.680><c> dot</c><00:04:53.640><c> Matt</c><00:04:54.000><c> show</c>
+
+00:04:54.560 --> 00:04:54.570 align:start position:0%
+what we want to do is a X dot Matt show
+ 
+
+00:04:54.570 --> 00:04:59.150 align:start position:0%
+what we want to do is a X dot Matt show
+and<00:04:55.020><c> we</c><00:04:55.560><c> want</c><00:04:55.710><c> a</c><00:04:55.770><c> Matt</c><00:04:55.980><c> show</c><00:04:56.280><c> min</c><00:04:56.820><c> wage</c><00:04:57.650><c> cor</c><00:04:58.650><c> but</c>
+
+00:04:59.150 --> 00:04:59.160 align:start position:0%
+and we want a Matt show min wage cor but
+ 
+
+00:04:59.160 --> 00:05:00.680 align:start position:0%
+and we want a Matt show min wage cor but
+then<00:04:59.310><c> we</c><00:04:59.370><c> also</c><00:04:59.550><c> want</c><00:04:59.700><c> to</c><00:04:59.850><c> change</c><00:05:00.030><c> the</c><00:05:00.210><c> C</c><00:05:00.480><c> map</c>
+
+00:05:00.680 --> 00:05:00.690 align:start position:0%
+then we also want to change the C map
+ 
+
+00:05:00.690 --> 00:05:03.980 align:start position:0%
+then we also want to change the C map
+this<00:05:00.990><c> that's</c><00:05:01.230><c> color</c><00:05:02.070><c> map</c><00:05:02.730><c> and</c><00:05:03.030><c> the</c><00:05:03.480><c> C</c><00:05:03.660><c> map</c><00:05:03.840><c> we</c>
+
+00:05:03.980 --> 00:05:03.990 align:start position:0%
+this that's color map and the C map we
+ 
+
+00:05:03.990 --> 00:05:09.290 align:start position:0%
+this that's color map and the C map we
+want<00:05:04.080><c> to</c><00:05:04.230><c> use</c><00:05:04.320><c> here's</c><00:05:04.560><c> PLT</c><00:05:05.040><c> cm</c><00:05:05.670><c> cm</c><00:05:06.710><c> dot</c><00:05:08.300><c> red</c>
+
+00:05:09.290 --> 00:05:09.300 align:start position:0%
+want to use here's PLT cm cm dot red
+ 
+
+00:05:09.300 --> 00:05:16.040 align:start position:0%
+want to use here's PLT cm cm dot red
+yellow<00:05:10.260><c> green</c><00:05:11.420><c> and</c><00:05:12.890><c> now</c><00:05:13.890><c> we</c><00:05:13.950><c> have</c><00:05:14.190><c> that</c><00:05:14.420><c> we</c><00:05:15.420><c> we</c>
+
+00:05:16.040 --> 00:05:16.050 align:start position:0%
+yellow green and now we have that we we
+ 
+
+00:05:16.050 --> 00:05:17.390 align:start position:0%
+yellow green and now we have that we we
+could<00:05:16.320><c> just</c><00:05:16.470><c> go</c><00:05:16.620><c> ahead</c><00:05:16.740><c> and</c><00:05:16.950><c> just</c><00:05:17.100><c> do</c><00:05:17.280><c> this</c>
+
+00:05:17.390 --> 00:05:17.400 align:start position:0%
+could just go ahead and just do this
+ 
+
+00:05:17.400 --> 00:05:20.000 align:start position:0%
+could just go ahead and just do this
+real<00:05:17.610><c> quick</c><00:05:17.640><c> and</c><00:05:18.000><c> boom</c><00:05:18.380><c> now</c><00:05:19.380><c> it's</c><00:05:19.410><c> a</c><00:05:19.620><c> heat</c><00:05:19.830><c> map</c>
+
+00:05:20.000 --> 00:05:20.010 align:start position:0%
+real quick and boom now it's a heat map
+ 
+
+00:05:20.010 --> 00:05:21.670 align:start position:0%
+real quick and boom now it's a heat map
+it<00:05:20.460><c> looks</c><00:05:20.520><c> more</c><00:05:20.850><c> like</c><00:05:21.060><c> what</c><00:05:21.240><c> we</c><00:05:21.360><c> would</c><00:05:21.480><c> expect</c>
+
+00:05:21.670 --> 00:05:21.680 align:start position:0%
+it looks more like what we would expect
+ 
+
+00:05:21.680 --> 00:05:28.760 align:start position:0%
+it looks more like what we would expect
+and<00:05:25.610><c> but</c><00:05:26.610><c> our</c><00:05:26.910><c> ticks</c><00:05:27.690><c> aren't</c><00:05:28.170><c> really</c><00:05:28.440><c> labeled</c>
+
+00:05:28.760 --> 00:05:28.770 align:start position:0%
+and but our ticks aren't really labeled
+ 
+
+00:05:28.770 --> 00:05:30.170 align:start position:0%
+and but our ticks aren't really labeled
+yet<00:05:28.920><c> so</c><00:05:29.160><c> that's</c><00:05:29.430><c> the</c><00:05:29.580><c> next</c><00:05:29.700><c> thing</c><00:05:29.880><c> we</c><00:05:29.970><c> want</c><00:05:30.120><c> to</c>
+
+00:05:30.170 --> 00:05:30.180 align:start position:0%
+yet so that's the next thing we want to
+ 
+
+00:05:30.180 --> 00:05:31.430 align:start position:0%
+yet so that's the next thing we want to
+do<00:05:30.300><c> so</c><00:05:30.510><c> the</c><00:05:30.630><c> next</c><00:05:30.660><c> thing</c><00:05:30.930><c> we</c><00:05:31.050><c> would</c><00:05:31.200><c> want</c><00:05:31.380><c> to</c>
+
+00:05:31.430 --> 00:05:31.440 align:start position:0%
+do so the next thing we would want to
+ 
+
+00:05:31.440 --> 00:05:37.340 align:start position:0%
+do so the next thing we would want to
+say<00:05:31.590><c> is</c><00:05:31.830><c> a</c><00:05:32.250><c> x</c><00:05:32.700><c> dot</c><00:05:33.150><c> set</c><00:05:34.190><c> underscore</c><00:05:36.350><c> set</c>
+
+00:05:37.340 --> 00:05:37.350 align:start position:0%
+say is a x dot set underscore set
+ 
+
+00:05:37.350 --> 00:05:41.540 align:start position:0%
+say is a x dot set underscore set
+underscore<00:05:37.950><c> Y</c><00:05:38.840><c> tick</c><00:05:39.840><c> labels</c><00:05:40.770><c> and</c><00:05:41.190><c> we</c><00:05:41.310><c> want</c><00:05:41.460><c> to</c>
+
+00:05:41.540 --> 00:05:41.550 align:start position:0%
+underscore Y tick labels and we want to
+ 
+
+00:05:41.550 --> 00:05:44.690 align:start position:0%
+underscore Y tick labels and we want to
+pass<00:05:41.780><c> labels</c><00:05:42.780><c> and</c><00:05:43.200><c> then</c><00:05:43.920><c> we'll</c><00:05:44.100><c> do</c><00:05:44.220><c> the</c><00:05:44.340><c> exact</c>
+
+00:05:44.690 --> 00:05:44.700 align:start position:0%
+pass labels and then we'll do the exact
+ 
+
+00:05:44.700 --> 00:05:50.870 align:start position:0%
+pass labels and then we'll do the exact
+same<00:05:44.730><c> thing</c><00:05:45.300><c> here</c><00:05:46.230><c> and</c><00:05:46.440><c> we</c><00:05:48.380><c> we</c><00:05:49.380><c> probably</c><00:05:49.880><c> want</c>
+
+00:05:50.870 --> 00:05:50.880 align:start position:0%
+same thing here and we we probably want
+ 
+
+00:05:50.880 --> 00:05:54.230 align:start position:0%
+same thing here and we we probably want
+to<00:05:50.970><c> do</c><00:05:51.090><c> that</c><00:05:51.120><c> before</c><00:05:51.390><c> the</c><00:05:51.630><c> show</c><00:05:53.060><c> can</c><00:05:54.060><c> I</c><00:05:54.120><c> get</c>
+
+00:05:54.230 --> 00:05:54.240 align:start position:0%
+to do that before the show can I get
+ 
+
+00:05:54.240 --> 00:06:00.590 align:start position:0%
+to do that before the show can I get
+away<00:05:54.330><c> with</c><00:05:54.570><c> that</c><00:05:54.780><c> oh</c><00:05:55.580><c> I</c><00:05:56.580><c> said</c><00:05:56.960><c> do</c><00:05:57.960><c> X&amp;Y</c><00:05:58.910><c> ok</c><00:05:59.910><c> ok</c>
+
+00:06:00.590 --> 00:06:00.600 align:start position:0%
+away with that oh I said do X&amp;Y ok ok
+ 
+
+00:06:00.600 --> 00:06:02.090 align:start position:0%
+away with that oh I said do X&amp;Y ok ok
+cool<00:06:00.780><c> so</c><00:06:01.080><c> we</c><00:06:01.170><c> have</c><00:06:01.290><c> the</c><00:06:01.410><c> labels</c><00:06:01.740><c> here</c><00:06:01.860><c> but</c><00:06:02.040><c> we</c>
+
+00:06:02.090 --> 00:06:02.100 align:start position:0%
+cool so we have the labels here but we
+ 
+
+00:06:02.100 --> 00:06:04.250 align:start position:0%
+cool so we have the labels here but we
+don't<00:06:02.160><c> have</c><00:06:02.280><c> all</c><00:06:02.490><c> of</c><00:06:02.700><c> them</c><00:06:02.880><c> so</c><00:06:03.180><c> matplotlib</c><00:06:03.900><c> is</c>
+
+00:06:04.250 --> 00:06:04.260 align:start position:0%
+don't have all of them so matplotlib is
+ 
+
+00:06:04.260 --> 00:06:05.810 align:start position:0%
+don't have all of them so matplotlib is
+kind<00:06:04.440><c> of</c><00:06:04.500><c> truncating</c><00:06:05.190><c> them</c><00:06:05.310><c> because</c><00:06:05.640><c> it</c>
+
+00:06:05.810 --> 00:06:05.820 align:start position:0%
+kind of truncating them because it
+ 
+
+00:06:05.820 --> 00:06:07.220 align:start position:0%
+kind of truncating them because it
+doesn't<00:06:06.060><c> want</c><00:06:06.180><c> to</c><00:06:06.240><c> put</c><00:06:06.390><c> too</c><00:06:06.570><c> many</c><00:06:06.660><c> labels</c><00:06:07.080><c> on</c>
+
+00:06:07.220 --> 00:06:07.230 align:start position:0%
+doesn't want to put too many labels on
+ 
+
+00:06:07.230 --> 00:06:09.260 align:start position:0%
+doesn't want to put too many labels on
+an<00:06:07.350><c> axes</c><00:06:07.710><c> make</c><00:06:07.950><c> it</c><00:06:08.070><c> hard</c><00:06:08.220><c> to</c><00:06:08.250><c> read</c><00:06:08.520><c> if</c><00:06:08.760><c> these</c>
+
+00:06:09.260 --> 00:06:09.270 align:start position:0%
+an axes make it hard to read if these
+ 
+
+00:06:09.270 --> 00:06:11.270 align:start position:0%
+an axes make it hard to read if these
+were<00:06:09.420><c> numbers</c><00:06:09.810><c> then</c><00:06:10.410><c> this</c><00:06:10.710><c> would</c><00:06:10.890><c> be</c><00:06:10.980><c> probably</c>
+
+00:06:11.270 --> 00:06:11.280 align:start position:0%
+were numbers then this would be probably
+ 
+
+00:06:11.280 --> 00:06:12.950 align:start position:0%
+were numbers then this would be probably
+descriptive<00:06:12.090><c> enough</c><00:06:12.300><c> for</c><00:06:12.480><c> us</c><00:06:12.540><c> but</c><00:06:12.780><c> they're</c>
+
+00:06:12.950 --> 00:06:12.960 align:start position:0%
+descriptive enough for us but they're
+ 
+
+00:06:12.960 --> 00:06:17.450 align:start position:0%
+descriptive enough for us but they're
+not<00:06:12.990><c> numbers</c><00:06:13.410><c> and</c><00:06:13.650><c> it's</c><00:06:13.800><c> not</c><00:06:13.950><c> so</c><00:06:16.220><c> what</c><00:06:17.220><c> we</c><00:06:17.310><c> need</c>
+
+00:06:17.450 --> 00:06:17.460 align:start position:0%
+not numbers and it's not so what we need
+ 
+
+00:06:17.460 --> 00:06:20.300 align:start position:0%
+not numbers and it's not so what we need
+to<00:06:17.490><c> do</c><00:06:17.670><c> is</c><00:06:18.180><c> tell</c><00:06:18.420><c> matplotlib</c><00:06:18.690><c> hey</c><00:06:19.230><c> show</c><00:06:20.040><c> me</c><00:06:20.160><c> all</c>
+
+00:06:20.300 --> 00:06:20.310 align:start position:0%
+to do is tell matplotlib hey show me all
+ 
+
+00:06:20.310 --> 00:06:22.970 align:start position:0%
+to do is tell matplotlib hey show me all
+of<00:06:20.640><c> them</c><00:06:20.820><c> so</c><00:06:21.690><c> the</c><00:06:21.930><c> next</c><00:06:22.110><c> thing</c><00:06:22.260><c> we</c><00:06:22.380><c> were</c><00:06:22.530><c> we</c><00:06:22.830><c> can</c>
+
+00:06:22.970 --> 00:06:22.980 align:start position:0%
+of them so the next thing we were we can
+ 
+
+00:06:22.980 --> 00:06:25.430 align:start position:0%
+of them so the next thing we were we can
+do<00:06:23.130><c> here</c><00:06:23.520><c> is</c><00:06:23.700><c> we</c><00:06:24.300><c> can</c><00:06:24.330><c> actually</c><00:06:24.570><c> just</c><00:06:24.930><c> tell</c>
+
+00:06:25.430 --> 00:06:25.440 align:start position:0%
+do here is we can actually just tell
+ 
+
+00:06:25.440 --> 00:06:28.040 align:start position:0%
+do here is we can actually just tell
+Matt<00:06:25.710><c> pot</c><00:06:25.920><c> Lib</c><00:06:26.130><c> show</c><00:06:26.790><c> all</c><00:06:27.060><c> of</c><00:06:27.390><c> the</c><00:06:27.510><c> labels</c><00:06:27.720><c> and</c>
+
+00:06:28.040 --> 00:06:28.050 align:start position:0%
+Matt pot Lib show all of the labels and
+ 
+
+00:06:28.050 --> 00:06:31.030 align:start position:0%
+Matt pot Lib show all of the labels and
+the<00:06:28.110><c> way</c><00:06:28.230><c> that</c><00:06:28.350><c> we</c><00:06:28.410><c> can</c><00:06:28.530><c> do</c><00:06:28.620><c> that</c><00:06:28.710><c> ax</c><00:06:29.250><c> dot</c><00:06:29.610><c> set</c>
+
+00:06:31.030 --> 00:06:31.040 align:start position:0%
+the way that we can do that ax dot set
+ 
+
+00:06:31.040 --> 00:06:34.670 align:start position:0%
+the way that we can do that ax dot set
+underscore<00:06:32.040><c> and</c><00:06:32.280><c> then</c><00:06:32.430><c> X</c><00:06:32.750><c> ticks</c><00:06:33.750><c> and</c><00:06:34.200><c> then</c>
+
+00:06:34.670 --> 00:06:34.680 align:start position:0%
+underscore and then X ticks and then
+ 
+
+00:06:34.680 --> 00:06:38.480 align:start position:0%
+underscore and then X ticks and then
+we'll<00:06:34.800><c> use</c><00:06:34.919><c> numpy</c><00:06:35.460><c> dot</c><00:06:35.790><c> range</c><00:06:36.150><c> and</c><00:06:37.340><c> that</c><00:06:38.340><c> will</c>
+
+00:06:38.480 --> 00:06:38.490 align:start position:0%
+we'll use numpy dot range and that will
+ 
+
+00:06:38.490 --> 00:06:39.810 align:start position:0%
+we'll use numpy dot range and that will
+be<00:06:38.700><c> for</c><00:06:38.970><c> the</c><00:06:39.060><c> Len</c>
+
+00:06:39.810 --> 00:06:39.820 align:start position:0%
+be for the Len
+ 
+
+00:06:39.820 --> 00:06:44.100 align:start position:0%
+be for the Len
+of<00:06:40.150><c> labels</c><00:06:40.830><c> LaBelle's</c><00:06:42.480><c> and</c><00:06:43.480><c> we'll</c><00:06:43.900><c> do</c><00:06:43.990><c> the</c>
+
+00:06:44.100 --> 00:06:44.110 align:start position:0%
+of labels LaBelle's and we'll do the
+ 
+
+00:06:44.110 --> 00:06:52.440 align:start position:0%
+of labels LaBelle's and we'll do the
+exact<00:06:44.320><c> same</c><00:06:44.350><c> thing</c><00:06:44.710><c> for</c><00:06:44.920><c> y</c><00:06:46.260><c> XY</c><00:06:47.260><c> boom</c><00:06:50.220><c> nope</c><00:06:51.450><c> why</c>
+
+00:06:52.440 --> 00:06:52.450 align:start position:0%
+exact same thing for y XY boom nope why
+ 
+
+00:06:52.450 --> 00:06:59.900 align:start position:0%
+exact same thing for y XY boom nope why
+didn't<00:06:52.720><c> that</c><00:06:52.810><c> work</c><00:06:55.530><c> why</c><00:06:56.530><c> didn't</c><00:06:56.830><c> that</c><00:06:56.920><c> work</c>
+
+00:06:59.900 --> 00:06:59.910 align:start position:0%
+ 
+ 
+
+00:06:59.910 --> 00:07:03.350 align:start position:0%
+ 
+[Music]
+
+00:07:03.350 --> 00:07:03.360 align:start position:0%
+ 
+ 
+
+00:07:03.360 --> 00:07:11.930 align:start position:0%
+ 
+why<00:07:04.360><c> isn't</c><00:07:04.630><c> that</c><00:07:04.690><c> working</c><00:07:04.750><c> hold</c><00:07:05.380><c> on</c><00:07:05.800><c> everybody</c>
+
+00:07:11.930 --> 00:07:11.940 align:start position:0%
+ 
+ 
+
+00:07:11.940 --> 00:07:18.660 align:start position:0%
+ 
+why<00:07:12.970><c> tick</c><00:07:13.360><c> labels</c><00:07:13.930><c> label</c><00:07:15.330><c> match</c><00:07:16.330><c> so</c><00:07:17.220><c> so</c><00:07:18.220><c> maybe</c>
+
+00:07:18.660 --> 00:07:18.670 align:start position:0%
+why tick labels label match so so maybe
+ 
+
+00:07:18.670 --> 00:07:22.020 align:start position:0%
+why tick labels label match so so maybe
+we<00:07:18.910><c> will</c><00:07:19.290><c> we'll</c><00:07:20.290><c> set</c><00:07:20.860><c> the</c><00:07:21.010><c> match</c><00:07:21.190><c> show</c><00:07:21.460><c> first</c>
+
+00:07:22.020 --> 00:07:22.030 align:start position:0%
+we will we'll set the match show first
+ 
+
+00:07:22.030 --> 00:07:29.310 align:start position:0%
+we will we'll set the match show first
+and<00:07:22.530><c> then</c><00:07:23.530><c> do</c><00:07:23.740><c> the</c><00:07:23.860><c> modifications</c><00:07:26.850><c> yeah</c><00:07:28.320><c> so</c>
+
+00:07:29.310 --> 00:07:29.320 align:start position:0%
+and then do the modifications yeah so
+ 
+
+00:07:29.320 --> 00:07:32.520 align:start position:0%
+and then do the modifications yeah so
+I'm<00:07:30.070><c> guessing</c><00:07:30.820><c> that</c><00:07:30.850><c> even</c><00:07:31.690><c> after</c><00:07:31.930><c> we</c><00:07:32.020><c> set</c><00:07:32.320><c> this</c>
+
+00:07:32.520 --> 00:07:32.530 align:start position:0%
+I'm guessing that even after we set this
+ 
+
+00:07:32.530 --> 00:07:34.920 align:start position:0%
+I'm guessing that even after we set this
+then<00:07:32.830><c> we</c><00:07:32.980><c> did</c><00:07:33.640><c> this</c><00:07:33.850><c> and</c><00:07:34.120><c> it</c><00:07:34.210><c> like</c><00:07:34.330><c> reset</c><00:07:34.810><c> it</c>
+
+00:07:34.920 --> 00:07:34.930 align:start position:0%
+then we did this and it like reset it
+ 
+
+00:07:34.930 --> 00:07:36.510 align:start position:0%
+then we did this and it like reset it
+for<00:07:35.110><c> whatever</c><00:07:35.320><c> reason</c><00:07:35.830><c> so</c><00:07:36.010><c> first</c><00:07:36.250><c> do</c><00:07:36.400><c> the</c>
+
+00:07:36.510 --> 00:07:36.520 align:start position:0%
+for whatever reason so first do the
+ 
+
+00:07:36.520 --> 00:07:41.030 align:start position:0%
+for whatever reason so first do the
+match<00:07:36.670><c> show</c><00:07:36.970><c> then</c><00:07:37.720><c> modify</c><00:07:38.290><c> the</c><00:07:38.320><c> ticks</c><00:07:38.740><c> and</c><00:07:39.210><c> I</c>
+
+00:07:41.030 --> 00:07:41.040 align:start position:0%
+match show then modify the ticks and I
+ 
+
+00:07:41.040 --> 00:07:43.590 align:start position:0%
+match show then modify the ticks and I
+bet<00:07:42.040><c> we</c><00:07:42.190><c> can't</c><00:07:42.430><c> do</c><00:07:42.550><c> a</c><00:07:42.580><c> show</c><00:07:42.880><c> now</c><00:07:43.120><c> right</c><00:07:43.450><c> like</c>
+
+00:07:43.590 --> 00:07:43.600 align:start position:0%
+bet we can't do a show now right like
+ 
+
+00:07:43.600 --> 00:07:46.620 align:start position:0%
+bet we can't do a show now right like
+that'll<00:07:43.900><c> still</c><00:07:44.080><c> be</c><00:07:44.170><c> messed</c><00:07:44.410><c> up</c><00:07:44.560><c> or</c><00:07:45.480><c> would</c><00:07:46.480><c> it</c>
+
+00:07:46.620 --> 00:07:46.630 align:start position:0%
+that'll still be messed up or would it
+ 
+
+00:07:46.630 --> 00:07:49.200 align:start position:0%
+that'll still be messed up or would it
+and<00:07:47.020><c> what's</c><00:07:47.380><c> up</c><00:07:47.530><c> with</c><00:07:47.650><c> the</c><00:07:47.770><c> text</c><00:07:48.210><c> fascinating</c>
+
+00:07:49.200 --> 00:07:49.210 align:start position:0%
+and what's up with the text fascinating
+ 
+
+00:07:49.210 --> 00:07:53.070 align:start position:0%
+and what's up with the text fascinating
+okay<00:07:49.390><c> whatever</c><00:07:50.380><c> we'll</c><00:07:50.560><c> do</c><00:07:50.650><c> this</c><00:07:50.830><c> way</c><00:07:52.080><c> okay</c>
+
+00:07:53.070 --> 00:07:53.080 align:start position:0%
+okay whatever we'll do this way okay
+ 
+
+00:07:53.080 --> 00:07:57.000 align:start position:0%
+okay whatever we'll do this way okay
+great<00:07:53.650><c> so</c><00:07:54.070><c> that's</c><00:07:54.490><c> looking</c><00:07:54.760><c> pretty</c><00:07:55.120><c> awesome</c>
+
+00:07:57.000 --> 00:07:57.010 align:start position:0%
+great so that's looking pretty awesome
+ 
+
+00:07:57.010 --> 00:08:00.630 align:start position:0%
+great so that's looking pretty awesome
+now<00:07:57.550><c> what</c><00:07:58.350><c> well</c><00:07:59.350><c> if</c><00:07:59.680><c> we</c><00:07:59.980><c> look</c><00:08:00.220><c> it's</c><00:08:00.520><c> probably</c>
+
+00:08:00.630 --> 00:08:00.640 align:start position:0%
+now what well if we look it's probably
+ 
+
+00:08:00.640 --> 00:08:02.400 align:start position:0%
+now what well if we look it's probably
+really<00:08:01.000><c> hard</c><00:08:01.210><c> to</c><00:08:01.360><c> see</c><00:08:01.540><c> here</c><00:08:01.870><c> but</c><00:08:02.050><c> like</c><00:08:02.230><c> what</c><00:08:02.380><c> if</c>
+
+00:08:02.400 --> 00:08:02.410 align:start position:0%
+really hard to see here but like what if
+ 
+
+00:08:02.410 --> 00:08:06.450 align:start position:0%
+really hard to see here but like what if
+I<00:08:02.530><c> just</c><00:08:02.710><c> print</c><00:08:03.180><c> labels</c><00:08:04.180><c> out</c><00:08:05.100><c> we</c><00:08:06.100><c> can</c><00:08:06.220><c> see</c><00:08:06.340><c> we</c>
+
+00:08:06.450 --> 00:08:06.460 align:start position:0%
+I just print labels out we can see we
+ 
+
+00:08:06.460 --> 00:08:07.890 align:start position:0%
+I just print labels out we can see we
+actually<00:08:06.550><c> have</c><00:08:06.790><c> quite</c><00:08:06.880><c> a</c><00:08:06.970><c> few</c><00:08:07.060><c> overlapping</c>
+
+00:08:07.890 --> 00:08:07.900 align:start position:0%
+actually have quite a few overlapping
+ 
+
+00:08:07.900 --> 00:08:09.780 align:start position:0%
+actually have quite a few overlapping
+that<00:08:08.290><c> are</c><00:08:08.410><c> like</c><00:08:08.560><c> the</c><00:08:08.680><c> same</c><00:08:08.860><c> name</c><00:08:09.130><c> like</c><00:08:09.310><c> MI</c><00:08:09.670><c> and</c>
+
+00:08:09.780 --> 00:08:09.790 align:start position:0%
+that are like the same name like MI and
+ 
+
+00:08:09.790 --> 00:08:13.800 align:start position:0%
+that are like the same name like MI and
+mi<00:08:09.910><c> so</c><00:08:10.390><c> Michigan</c><00:08:11.020><c> Minnesota</c><00:08:11.590><c> and</c><00:08:11.940><c> any</c><00:08:12.940><c> any</c><00:08:13.450><c> any</c>
+
+00:08:13.800 --> 00:08:13.810 align:start position:0%
+mi so Michigan Minnesota and any any any
+ 
+
+00:08:13.810 --> 00:08:17.430 align:start position:0%
+mi so Michigan Minnesota and any any any
+like<00:08:14.530><c> four</c><00:08:14.770><c> or</c><00:08:14.860><c> five</c><00:08:14.890><c> NES</c><00:08:15.310><c> here</c><00:08:16.290><c> that's</c><00:08:17.290><c> kind</c>
+
+00:08:17.430 --> 00:08:17.440 align:start position:0%
+like four or five NES here that's kind
+ 
+
+00:08:17.440 --> 00:08:19.560 align:start position:0%
+like four or five NES here that's kind
+of<00:08:17.470><c> a</c><00:08:17.560><c> problem</c><00:08:17.740><c> so</c><00:08:18.460><c> maybe</c><00:08:19.090><c> we</c><00:08:19.330><c> want</c><00:08:19.480><c> to</c>
+
+00:08:19.560 --> 00:08:19.570 align:start position:0%
+of a problem so maybe we want to
+ 
+
+00:08:19.570 --> 00:08:21.180 align:start position:0%
+of a problem so maybe we want to
+actually<00:08:19.690><c> make</c><00:08:20.020><c> these</c><00:08:20.170><c> right</c><00:08:20.470><c> so</c><00:08:20.830><c> we</c><00:08:21.010><c> could</c>
+
+00:08:21.180 --> 00:08:21.190 align:start position:0%
+actually make these right so we could
+ 
+
+00:08:21.190 --> 00:08:23.130 align:start position:0%
+actually make these right so we could
+hard<00:08:21.460><c> code</c><00:08:21.670><c> them</c><00:08:21.880><c> ourselves</c><00:08:22.180><c> because</c><00:08:22.990><c> we</c>
+
+00:08:23.130 --> 00:08:23.140 align:start position:0%
+hard code them ourselves because we
+ 
+
+00:08:23.140 --> 00:08:24.510 align:start position:0%
+hard code them ourselves because we
+might<00:08:23.260><c> actually</c><00:08:23.500><c> know</c><00:08:23.770><c> them</c><00:08:23.950><c> or</c><00:08:24.160><c> we</c><00:08:24.370><c> could</c>
+
+00:08:24.510 --> 00:08:24.520 align:start position:0%
+might actually know them or we could
+ 
+
+00:08:24.520 --> 00:08:26.190 align:start position:0%
+might actually know them or we could
+bring<00:08:24.670><c> in</c><00:08:24.790><c> outside</c><00:08:25.210><c> dataset</c><00:08:25.690><c> so</c><00:08:25.930><c> a</c><00:08:25.960><c> lot</c><00:08:26.170><c> of</c>
+
+00:08:26.190 --> 00:08:26.200 align:start position:0%
+bring in outside dataset so a lot of
+ 
+
+00:08:26.200 --> 00:08:28.470 align:start position:0%
+bring in outside dataset so a lot of
+times<00:08:26.470><c> in</c><00:08:26.800><c> this</c><00:08:27.130><c> case</c><00:08:27.340><c> we</c><00:08:27.520><c> only</c><00:08:27.550><c> have</c><00:08:27.820><c> like</c><00:08:27.940><c> 39</c>
+
+00:08:28.470 --> 00:08:28.480 align:start position:0%
+times in this case we only have like 39
+ 
+
+00:08:28.480 --> 00:08:30.300 align:start position:0%
+times in this case we only have like 39
+states<00:08:28.990><c> that</c><00:08:29.320><c> I</c><00:08:29.350><c> actually</c><00:08:29.500><c> had</c><00:08:29.770><c> minimum</c><00:08:30.160><c> wage</c>
+
+00:08:30.300 --> 00:08:30.310 align:start position:0%
+states that I actually had minimum wage
+ 
+
+00:08:30.310 --> 00:08:32.490 align:start position:0%
+states that I actually had minimum wage
+data<00:08:30.580><c> so</c><00:08:31.120><c> we</c><00:08:31.240><c> could</c><00:08:31.390><c> totally</c><00:08:31.570><c> fill</c><00:08:32.110><c> that</c><00:08:32.229><c> in</c><00:08:32.380><c> by</c>
+
+00:08:32.490 --> 00:08:32.500 align:start position:0%
+data so we could totally fill that in by
+ 
+
+00:08:32.500 --> 00:08:35.070 align:start position:0%
+data so we could totally fill that in by
+hand<00:08:32.800><c> but</c><00:08:33.550><c> later</c><00:08:34.150><c> you</c><00:08:34.419><c> might</c><00:08:34.599><c> find</c><00:08:34.780><c> you</c><00:08:34.930><c> have</c><00:08:35.020><c> a</c>
+
+00:08:35.070 --> 00:08:35.080 align:start position:0%
+hand but later you might find you have a
+ 
+
+00:08:35.080 --> 00:08:37.560 align:start position:0%
+hand but later you might find you have a
+data<00:08:35.290><c> set</c><00:08:35.500><c> that's</c><00:08:35.710><c> much</c><00:08:36.520><c> larger</c><00:08:37.120><c> and</c><00:08:37.390><c> then</c>
+
+00:08:37.560 --> 00:08:37.570 align:start position:0%
+data set that's much larger and then
+ 
+
+00:08:37.570 --> 00:08:39.210 align:start position:0%
+data set that's much larger and then
+you've<00:08:37.900><c> got</c><00:08:38.080><c> like</c><00:08:38.229><c> some</c><00:08:38.440><c> sort</c><00:08:38.650><c> of</c><00:08:38.710><c> values</c><00:08:39.190><c> that</c>
+
+00:08:39.210 --> 00:08:39.220 align:start position:0%
+you've got like some sort of values that
+ 
+
+00:08:39.220 --> 00:08:40.950 align:start position:0%
+you've got like some sort of values that
+you<00:08:39.430><c> actually</c><00:08:39.640><c> want</c><00:08:39.910><c> to</c><00:08:40.000><c> map</c><00:08:40.210><c> that</c><00:08:40.450><c> data</c><00:08:40.660><c> set</c>
+
+00:08:40.950 --> 00:08:40.960 align:start position:0%
+you actually want to map that data set
+ 
+
+00:08:40.960 --> 00:08:42.990 align:start position:0%
+you actually want to map that data set
+and<00:08:41.290><c> it</c><00:08:41.530><c> would</c><00:08:41.650><c> just</c><00:08:41.800><c> be</c><00:08:41.919><c> very</c><00:08:41.950><c> cumbersome</c><00:08:42.820><c> to</c>
+
+00:08:42.990 --> 00:08:43.000 align:start position:0%
+and it would just be very cumbersome to
+ 
+
+00:08:43.000 --> 00:08:46.350 align:start position:0%
+and it would just be very cumbersome to
+do<00:08:43.120><c> by</c><00:08:43.300><c> hand</c><00:08:43.599><c> so</c><00:08:44.380><c> how</c><00:08:45.160><c> could</c><00:08:45.400><c> we</c><00:08:45.580><c> fix</c><00:08:45.850><c> this</c><00:08:46.090><c> well</c>
+
+00:08:46.350 --> 00:08:46.360 align:start position:0%
+do by hand so how could we fix this well
+ 
+
+00:08:46.360 --> 00:08:48.330 align:start position:0%
+do by hand so how could we fix this well
+first<00:08:46.510><c> we</c><00:08:46.750><c> need</c><00:08:46.780><c> to</c><00:08:47.140><c> find</c><00:08:47.350><c> we</c><00:08:47.650><c> need</c><00:08:47.680><c> some</c><00:08:48.130><c> way</c>
+
+00:08:48.330 --> 00:08:48.340 align:start position:0%
+first we need to find we need some way
+ 
+
+00:08:48.340 --> 00:08:53.070 align:start position:0%
+first we need to find we need some way
+of<00:08:48.370><c> mapping</c><00:08:49.110><c> the</c><00:08:50.110><c> state</c><00:08:50.620><c> name</c><00:08:50.860><c> to</c>
+
+00:08:53.070 --> 00:08:53.080 align:start position:0%
+of mapping the state name to
+ 
+
+00:08:53.080 --> 00:08:56.710 align:start position:0%
+of mapping the state name to
+-<00:08:54.080><c> you</c><00:08:54.380><c> know</c><00:08:54.470><c> I</c><00:08:54.500><c> get</c><00:08:54.710><c> to</c><00:08:54.740><c> letter</c><00:08:55.070><c> thing</c><00:08:55.730><c> so</c><00:08:56.360><c> the</c>
+
+00:08:56.710 --> 00:08:56.720 align:start position:0%
+- you know I get to letter thing so the
+ 
+
+00:08:56.720 --> 00:08:58.120 align:start position:0%
+- you know I get to letter thing so the
+first<00:08:56.750><c> thing</c><00:08:57.050><c> I</c><00:08:57.200><c> would</c><00:08:57.350><c> do</c><00:08:57.500><c> is</c><00:08:57.620><c> just</c><00:08:57.649><c> go</c><00:08:57.860><c> online</c>
+
+00:08:58.120 --> 00:08:58.130 align:start position:0%
+first thing I would do is just go online
+ 
+
+00:08:58.130 --> 00:09:03.190 align:start position:0%
+first thing I would do is just go online
+and<00:08:58.610><c> look</c><00:08:58.850><c> for</c><00:08:58.880><c> one</c><00:08:59.210><c> right</c><00:08:59.390><c> so</c><00:09:00.310><c> state</c><00:09:01.630><c> brie</c><00:09:02.630><c> vs</c>
+
+00:09:03.190 --> 00:09:03.200 align:start position:0%
+and look for one right so state brie vs
+ 
+
+00:09:03.200 --> 00:09:05.610 align:start position:0%
+and look for one right so state brie vs
+so<00:09:03.620><c> I</c><00:09:03.950><c> would</c><00:09:04.100><c> start</c><00:09:04.220><c> by</c><00:09:04.310><c> here</c><00:09:04.640><c> and</c><00:09:04.880><c> then</c>
+
+00:09:05.610 --> 00:09:05.620 align:start position:0%
+so I would start by here and then
+ 
+
+00:09:05.620 --> 00:09:08.710 align:start position:0%
+so I would start by here and then
+basically<00:09:06.620><c> I</c><00:09:06.950><c> stink</c><00:09:07.460><c> I</c><00:09:07.580><c> started</c><00:09:08.089><c> yeah</c><00:09:08.420><c> I</c><00:09:08.450><c> found</c>
+
+00:09:08.710 --> 00:09:08.720 align:start position:0%
+basically I stink I started yeah I found
+ 
+
+00:09:08.720 --> 00:09:10.240 align:start position:0%
+basically I stink I started yeah I found
+ended<00:09:09.080><c> up</c><00:09:09.200><c> finding</c><00:09:09.380><c> this</c><00:09:09.529><c> one</c><00:09:09.800><c> I</c><00:09:09.860><c> think</c><00:09:10.040><c> I</c>
+
+00:09:10.240 --> 00:09:10.250 align:start position:0%
+ended up finding this one I think I
+ 
+
+00:09:10.250 --> 00:09:12.070 align:start position:0%
+ended up finding this one I think I
+started<00:09:10.610><c> here</c><00:09:11.000><c> and</c><00:09:11.180><c> then</c><00:09:11.240><c> I</c><00:09:11.360><c> eventually</c><00:09:11.480><c> led</c>
+
+00:09:12.070 --> 00:09:12.080 align:start position:0%
+started here and then I eventually led
+ 
+
+00:09:12.080 --> 00:09:13.930 align:start position:0%
+started here and then I eventually led
+to<00:09:12.110><c> this</c><00:09:12.380><c> one</c><00:09:12.589><c> so</c><00:09:13.190><c> this</c><00:09:13.310><c> was</c><00:09:13.459><c> the</c><00:09:13.550><c> first</c><00:09:13.760><c> one</c><00:09:13.820><c> I</c>
+
+00:09:13.930 --> 00:09:13.940 align:start position:0%
+to this one so this was the first one I
+ 
+
+00:09:13.940 --> 00:09:17.230 align:start position:0%
+to this one so this was the first one I
+found<00:09:14.830><c> but</c><00:09:15.830><c> we</c><00:09:15.920><c> can't</c><00:09:16.190><c> use</c><00:09:16.250><c> pandas</c><00:09:16.880><c> to</c><00:09:17.060><c> pull</c>
+
+00:09:17.230 --> 00:09:17.240 align:start position:0%
+found but we can't use pandas to pull
+ 
+
+00:09:17.240 --> 00:09:20.380 align:start position:0%
+found but we can't use pandas to pull
+from<00:09:17.390><c> here</c><00:09:17.480><c> because</c><00:09:17.930><c> this</c><00:09:18.440><c> website</c><00:09:19.390><c> actively</c>
+
+00:09:20.380 --> 00:09:20.390 align:start position:0%
+from here because this website actively
+ 
+
+00:09:20.390 --> 00:09:23.350 align:start position:0%
+from here because this website actively
+declines<00:09:20.750><c> robots</c><00:09:21.200><c> so</c><00:09:22.010><c> then</c><00:09:22.130><c> I</c><00:09:22.160><c> found</c><00:09:22.370><c> info</c>
+
+00:09:23.350 --> 00:09:23.360 align:start position:0%
+declines robots so then I found info
+ 
+
+00:09:23.360 --> 00:09:25.540 align:start position:0%
+declines robots so then I found info
+please<00:09:23.630><c> calm</c><00:09:24.170><c> and</c><00:09:24.470><c> this</c><00:09:24.620><c> one</c><00:09:24.800><c> does</c><00:09:24.980><c> not</c>
+
+00:09:25.540 --> 00:09:25.550 align:start position:0%
+please calm and this one does not
+ 
+
+00:09:25.550 --> 00:09:29.019 align:start position:0%
+please calm and this one does not
+yes<00:09:26.060><c> we</c><00:09:26.300><c> can</c><00:09:26.480><c> overcome</c><00:09:26.810><c> anything</c><00:09:27.640><c> that</c><00:09:28.640><c> you</c>
+
+00:09:29.019 --> 00:09:29.029 align:start position:0%
+yes we can overcome anything that you
+ 
+
+00:09:29.029 --> 00:09:31.380 align:start position:0%
+yes we can overcome anything that you
+know<00:09:29.120><c> tries</c><00:09:29.360><c> to</c><00:09:29.510><c> decline</c><00:09:29.899><c> access</c><00:09:30.320><c> to</c><00:09:30.500><c> a</c><00:09:30.529><c> robot</c>
+
+00:09:31.380 --> 00:09:31.390 align:start position:0%
+know tries to decline access to a robot
+ 
+
+00:09:31.390 --> 00:09:35.889 align:start position:0%
+know tries to decline access to a robot
+that's<00:09:32.390><c> not</c><00:09:32.959><c> a</c><00:09:32.990><c> problem</c><00:09:33.520><c> I</c><00:09:34.520><c> did</c><00:09:35.420><c> problem</c><00:09:35.810><c> I</c>
+
+00:09:35.889 --> 00:09:35.899 align:start position:0%
+that's not a problem I did problem I
+ 
+
+00:09:35.899 --> 00:09:37.870 align:start position:0%
+that's not a problem I did problem I
+have<00:09:36.080><c> is</c><00:09:36.260><c> making</c><00:09:36.470><c> a</c><00:09:36.680><c> tutorial</c><00:09:37.070><c> on</c><00:09:37.399><c> doing</c><00:09:37.760><c> that</c>
+
+00:09:37.870 --> 00:09:37.880 align:start position:0%
+have is making a tutorial on doing that
+ 
+
+00:09:37.880 --> 00:09:40.420 align:start position:0%
+have is making a tutorial on doing that
+to<00:09:38.120><c> a</c><00:09:38.149><c> specific</c><00:09:38.720><c> website</c><00:09:38.870><c> I</c><00:09:39.410><c> think</c><00:09:39.980><c> you</c><00:09:40.250><c> could</c>
+
+00:09:40.420 --> 00:09:40.430 align:start position:0%
+to a specific website I think you could
+ 
+
+00:09:40.430 --> 00:09:42.190 align:start position:0%
+to a specific website I think you could
+run<00:09:40.640><c> into</c><00:09:40.820><c> certain</c><00:09:41.209><c> issues</c><00:09:41.750><c> if</c><00:09:41.899><c> you</c><00:09:41.990><c> do</c><00:09:42.080><c> that</c>
+
+00:09:42.190 --> 00:09:42.200 align:start position:0%
+run into certain issues if you do that
+ 
+
+00:09:42.200 --> 00:09:44.410 align:start position:0%
+run into certain issues if you do that
+so<00:09:42.440><c> I'm</c><00:09:42.770><c> going</c><00:09:43.010><c> to</c><00:09:43.040><c> avoid</c><00:09:43.279><c> doing</c><00:09:43.339><c> that</c><00:09:43.730><c> so</c><00:09:44.240><c> we</c>
+
+00:09:44.410 --> 00:09:44.420 align:start position:0%
+so I'm going to avoid doing that so we
+ 
+
+00:09:44.420 --> 00:09:45.880 align:start position:0%
+so I'm going to avoid doing that so we
+use<00:09:44.570><c> this</c><00:09:44.720><c> site</c><00:09:44.930><c> instead</c><00:09:45.230><c> because</c><00:09:45.589><c> this</c><00:09:45.740><c> site</c>
+
+00:09:45.880 --> 00:09:45.890 align:start position:0%
+use this site instead because this site
+ 
+
+00:09:45.890 --> 00:09:50.079 align:start position:0%
+use this site instead because this site
+does<00:09:46.040><c> not</c><00:09:46.190><c> block</c><00:09:46.430><c> bots</c><00:09:46.959><c> so</c><00:09:47.959><c> cool</c><00:09:49.000><c> so</c><00:09:50.000><c> that's</c>
+
+00:09:50.079 --> 00:09:50.089 align:start position:0%
+does not block bots so cool so that's
+ 
+
+00:09:50.089 --> 00:09:53.320 align:start position:0%
+does not block bots so cool so that's
+the<00:09:50.240><c> one</c><00:09:50.360><c> that</c><00:09:50.480><c> we</c><00:09:50.540><c> want</c><00:09:50.720><c> to</c><00:09:50.779><c> use</c><00:09:50.899><c> now</c><00:09:51.970><c> so</c><00:09:52.970><c> let's</c>
+
+00:09:53.320 --> 00:09:53.330 align:start position:0%
+the one that we want to use now so let's
+ 
+
+00:09:53.330 --> 00:09:55.570 align:start position:0%
+the one that we want to use now so let's
+go<00:09:53.480><c> ahead</c><00:09:53.600><c> and</c><00:09:53.779><c> read</c><00:09:53.990><c> in</c><00:09:54.140><c> that</c><00:09:54.410><c> data</c><00:09:54.920><c> so</c><00:09:55.190><c> the</c>
+
+00:09:55.570 --> 00:09:55.580 align:start position:0%
+go ahead and read in that data so the
+ 
+
+00:09:55.580 --> 00:09:58.690 align:start position:0%
+go ahead and read in that data so the
+first<00:09:55.790><c> thing</c><00:09:56.000><c> that</c><00:09:56.660><c> we</c><00:09:57.140><c> would</c><00:09:57.290><c> do</c><00:09:57.529><c> is</c><00:09:57.830><c> we</c><00:09:58.670><c> would</c>
+
+00:09:58.690 --> 00:09:58.700 align:start position:0%
+first thing that we would do is we would
+ 
+
+00:09:58.700 --> 00:10:01.030 align:start position:0%
+first thing that we would do is we would
+just<00:09:59.140><c> you</c><00:10:00.140><c> might</c><00:10:00.290><c> have</c><00:10:00.410><c> this</c><00:10:00.589><c> in</c><00:10:00.709><c> a</c><00:10:00.770><c> separate</c>
+
+00:10:01.030 --> 00:10:01.040 align:start position:0%
+just you might have this in a separate
+ 
+
+00:10:01.040 --> 00:10:02.079 align:start position:0%
+just you might have this in a separate
+script<00:10:01.339><c> so</c><00:10:01.520><c> I'm</c><00:10:01.610><c> just</c><00:10:01.730><c> going</c><00:10:01.880><c> to</c><00:10:01.910><c> write</c>
+
+00:10:02.079 --> 00:10:02.089 align:start position:0%
+script so I'm just going to write
+ 
+
+00:10:02.089 --> 00:10:04.300 align:start position:0%
+script so I'm just going to write
+everything<00:10:02.300><c> out</c><00:10:02.540><c> again</c><00:10:02.690><c> import</c><00:10:03.320><c> pandas</c><00:10:03.740><c> as</c><00:10:03.890><c> PD</c>
+
+00:10:04.300 --> 00:10:04.310 align:start position:0%
+everything out again import pandas as PD
+ 
+
+00:10:04.310 --> 00:10:06.400 align:start position:0%
+everything out again import pandas as PD
+especially<00:10:04.790><c> because</c><00:10:04.880><c> this</c><00:10:05.209><c> could</c><00:10:05.420><c> cause</c><00:10:05.720><c> we</c>
+
+00:10:06.400 --> 00:10:06.410 align:start position:0%
+especially because this could cause we
+ 
+
+00:10:06.410 --> 00:10:07.660 align:start position:0%
+especially because this could cause we
+might<00:10:06.529><c> have</c><00:10:06.650><c> issues</c><00:10:06.800><c> with</c><00:10:07.160><c> this</c><00:10:07.310><c> in</c><00:10:07.490><c> a</c><00:10:07.550><c> little</c>
+
+00:10:07.660 --> 00:10:07.670 align:start position:0%
+might have issues with this in a little
+ 
+
+00:10:07.670 --> 00:10:11.500 align:start position:0%
+might have issues with this in a little
+bit<00:10:08.110><c> and</c><00:10:09.110><c> then</c><00:10:09.320><c> what</c><00:10:09.440><c> we</c><00:10:09.529><c> want</c><00:10:09.650><c> to</c><00:10:09.740><c> do</c><00:10:09.860><c> is</c><00:10:09.980><c> DF</c><00:10:10.510><c> so</c>
+
+00:10:11.500 --> 00:10:11.510 align:start position:0%
+bit and then what we want to do is DF so
+ 
+
+00:10:11.510 --> 00:10:15.730 align:start position:0%
+bit and then what we want to do is DF so
+DF<00:10:11.900><c> s</c><00:10:12.190><c> equals</c><00:10:13.190><c> PD</c><00:10:13.459><c> dot</c><00:10:13.670><c> read</c><00:10:14.440><c> HTML</c><00:10:15.440><c> and</c><00:10:15.589><c> don't</c>
+
+00:10:15.730 --> 00:10:15.740 align:start position:0%
+DF s equals PD dot read HTML and don't
+ 
+
+00:10:15.740 --> 00:10:17.230 align:start position:0%
+DF s equals PD dot read HTML and don't
+run<00:10:15.950><c> this</c><00:10:16.100><c> yet</c>
+
+00:10:17.230 --> 00:10:17.240 align:start position:0%
+run this yet
+ 
+
+00:10:17.240 --> 00:10:18.910 align:start position:0%
+run this yet
+and<00:10:17.540><c> then</c><00:10:17.690><c> that</c><00:10:17.900><c> website</c><00:10:18.380><c> that</c><00:10:18.410><c> we</c><00:10:18.620><c> just</c><00:10:18.800><c> found</c>
+
+00:10:18.910 --> 00:10:18.920 align:start position:0%
+and then that website that we just found
+ 
+
+00:10:18.920 --> 00:10:20.620 align:start position:0%
+and then that website that we just found
+it's<00:10:19.130><c> like</c><00:10:19.220><c> info</c><00:10:19.520><c> please</c><00:10:19.820><c> calm</c><00:10:20.240><c> I'll</c><00:10:20.480><c> put</c>
+
+00:10:20.620 --> 00:10:20.630 align:start position:0%
+it's like info please calm I'll put
+ 
+
+00:10:20.630 --> 00:10:21.910 align:start position:0%
+it's like info please calm I'll put
+either<00:10:20.750><c> the</c><00:10:20.900><c> link</c><00:10:21.350><c> in</c><00:10:21.440><c> the</c><00:10:21.500><c> description</c><00:10:21.890><c> or</c>
+
+00:10:21.910 --> 00:10:21.920 align:start position:0%
+either the link in the description or
+ 
+
+00:10:21.920 --> 00:10:23.230 align:start position:0%
+either the link in the description or
+the<00:10:22.070><c> text</c><00:10:22.339><c> base</c><00:10:22.459><c> tutorial</c><00:10:22.610><c> in</c><00:10:23.029><c> the</c>
+
+00:10:23.230 --> 00:10:23.240 align:start position:0%
+the text base tutorial in the
+ 
+
+00:10:23.240 --> 00:10:25.300 align:start position:0%
+the text base tutorial in the
+description<00:10:23.620><c> and</c><00:10:24.620><c> you</c><00:10:24.770><c> can</c><00:10:24.920><c> find</c><00:10:25.100><c> the</c><00:10:25.160><c> link</c>
+
+00:10:25.300 --> 00:10:25.310 align:start position:0%
+description and you can find the link
+ 
+
+00:10:25.310 --> 00:10:27.130 align:start position:0%
+description and you can find the link
+there<00:10:25.459><c> or</c><00:10:25.640><c> you</c><00:10:25.970><c> could</c><00:10:26.089><c> just</c><00:10:26.150><c> Google</c><00:10:26.540><c> exactly</c>
+
+00:10:27.130 --> 00:10:27.140 align:start position:0%
+there or you could just Google exactly
+ 
+
+00:10:27.140 --> 00:10:29.320 align:start position:0%
+there or you could just Google exactly
+how<00:10:27.260><c> I</c><00:10:27.290><c> did</c><00:10:27.560><c> in</c><00:10:27.709><c> find</c><00:10:28.130><c> that</c><00:10:28.400><c> one</c><00:10:28.610><c> super</c><00:10:29.120><c> simple</c>
+
+00:10:29.320 --> 00:10:29.330 align:start position:0%
+how I did in find that one super simple
+ 
+
+00:10:29.330 --> 00:10:32.440 align:start position:0%
+how I did in find that one super simple
+now<00:10:30.110><c> to</c><00:10:30.170><c> use</c><00:10:30.560><c> read</c><00:10:31.130><c> HTML</c><00:10:31.880><c> we</c><00:10:32.089><c> need</c><00:10:32.209><c> a</c><00:10:32.240><c> few</c>
+
+00:10:32.440 --> 00:10:32.450 align:start position:0%
+now to use read HTML we need a few
+ 
+
+00:10:32.450 --> 00:10:35.640 align:start position:0%
+now to use read HTML we need a few
+packages<00:10:32.930><c> we</c><00:10:33.110><c> need</c><00:10:33.260><c> L</c><00:10:33.529><c> XML</c><00:10:34.010><c> html5</c><00:10:34.910><c> Lib</c><00:10:35.180><c> and</c>
+
+00:10:35.640 --> 00:10:35.650 align:start position:0%
+packages we need L XML html5 Lib and
+ 
+
+00:10:35.650 --> 00:10:38.590 align:start position:0%
+packages we need L XML html5 Lib and
+beautifulsoup<00:10:36.650><c> before</c><00:10:37.130><c> so</c><00:10:37.910><c> come</c><00:10:38.450><c> to</c><00:10:38.570><c> a</c>
+
+00:10:38.590 --> 00:10:38.600 align:start position:0%
+beautifulsoup before so come to a
+ 
+
+00:10:38.600 --> 00:10:42.100 align:start position:0%
+beautifulsoup before so come to a
+command<00:10:38.870><c> prompt</c><00:10:39.230><c> pip</c><00:10:39.680><c> install</c><00:10:40.420><c> html5</c><00:10:41.420><c> live</c>
+
+00:10:42.100 --> 00:10:42.110 align:start position:0%
+command prompt pip install html5 live
+ 
+
+00:10:42.110 --> 00:10:43.750 align:start position:0%
+command prompt pip install html5 live
+actually<00:10:42.680><c> let</c><00:10:42.829><c> me</c><00:10:42.890><c> just</c><00:10:42.920><c> do</c><00:10:43.160><c> it</c><00:10:43.250><c> in</c><00:10:43.339><c> order</c><00:10:43.579><c> L</c>
+
+00:10:43.750 --> 00:10:43.760 align:start position:0%
+actually let me just do it in order L
+ 
+
+00:10:43.760 --> 00:10:49.750 align:start position:0%
+actually let me just do it in order L
+XML<00:10:44.209><c> html5</c><00:10:45.130><c> Lib</c><00:10:46.130><c> B</c><00:10:46.880><c> s4</c><00:10:48.310><c> so</c><00:10:49.310><c> go</c><00:10:49.459><c> ahead</c><00:10:49.610><c> and</c>
+
+00:10:49.750 --> 00:10:49.760 align:start position:0%
+XML html5 Lib B s4 so go ahead and
+ 
+
+00:10:49.760 --> 00:10:54.370 align:start position:0%
+XML html5 Lib B s4 so go ahead and
+install<00:10:49.940><c> those</c><00:10:50.410><c> if</c><00:10:51.410><c> you</c><00:10:51.740><c> are</c><00:10:51.770><c> on</c><00:10:52.300><c> Mac</c><00:10:53.300><c> you</c><00:10:54.200><c> will</c>
+
+00:10:54.370 --> 00:10:54.380 align:start position:0%
+install those if you are on Mac you will
+ 
+
+00:10:54.380 --> 00:10:57.310 align:start position:0%
+install those if you are on Mac you will
+need<00:10:54.680><c> to</c><00:10:54.980><c> run</c><00:10:55.310><c> an</c><00:10:55.670><c> extra</c><00:10:56.060><c> command</c><00:10:56.480><c> go</c><00:10:57.079><c> to</c><00:10:57.140><c> the</c>
+
+00:10:57.310 --> 00:10:57.320 align:start position:0%
+need to run an extra command go to the
+ 
+
+00:10:57.320 --> 00:10:59.350 align:start position:0%
+need to run an extra command go to the
+text-based<00:10:57.560><c> version</c><00:10:57.829><c> of</c><00:10:58.040><c> the</c><00:10:58.100><c> tutorial</c><00:10:58.520><c> to</c>
+
+00:10:59.350 --> 00:10:59.360 align:start position:0%
+text-based version of the tutorial to
+ 
+
+00:10:59.360 --> 00:11:00.910 align:start position:0%
+text-based version of the tutorial to
+figure<00:10:59.600><c> that</c><00:10:59.720><c> out</c><00:10:59.779><c> if</c><00:11:00.110><c> you're</c><00:11:00.410><c> on</c><00:11:00.560><c> like</c><00:11:00.770><c> some</c>
+
+00:11:00.910 --> 00:11:00.920 align:start position:0%
+figure that out if you're on like some
+ 
+
+00:11:00.920 --> 00:11:02.680 align:start position:0%
+figure that out if you're on like some
+sort<00:11:01.130><c> of</c><00:11:01.160><c> company</c><00:11:01.579><c> computer</c><00:11:02.089><c> with</c><00:11:02.360><c> some</c><00:11:02.510><c> sort</c>
+
+00:11:02.680 --> 00:11:02.690 align:start position:0%
+sort of company computer with some sort
+ 
+
+00:11:02.690 --> 00:11:04.600 align:start position:0%
+sort of company computer with some sort
+of<00:11:02.750><c> proxy</c><00:11:03.140><c> system</c>
+
+00:11:04.600 --> 00:11:04.610 align:start position:0%
+of proxy system
+ 
+
+00:11:04.610 --> 00:11:06.579 align:start position:0%
+of proxy system
+what<00:11:05.000><c> you're</c><00:11:05.120><c> gonna</c><00:11:05.209><c> want</c><00:11:05.450><c> to</c><00:11:05.480><c> do</c><00:11:05.630><c> is</c><00:11:05.870><c> also</c><00:11:06.200><c> pip</c>
+
+00:11:06.579 --> 00:11:06.589 align:start position:0%
+what you're gonna want to do is also pip
+ 
+
+00:11:06.589 --> 00:11:10.240 align:start position:0%
+what you're gonna want to do is also pip
+install<00:11:08.110><c> requests</c><00:11:09.110><c> you</c><00:11:09.709><c> might</c><00:11:09.860><c> as</c><00:11:09.950><c> well</c><00:11:10.070><c> have</c>
+
+00:11:10.240 --> 00:11:10.250 align:start position:0%
+install requests you might as well have
+ 
+
+00:11:10.250 --> 00:11:12.250 align:start position:0%
+install requests you might as well have
+requests<00:11:10.730><c> as</c><00:11:10.820><c> well</c><00:11:10.850><c> as</c><00:11:11.029><c> a</c><00:11:11.269><c> much</c><00:11:11.630><c> smarter</c><00:11:11.959><c> way</c>
+
+00:11:12.250 --> 00:11:12.260 align:start position:0%
+requests as well as a much smarter way
+ 
+
+00:11:12.260 --> 00:11:15.280 align:start position:0%
+requests as well as a much smarter way
+of<00:11:12.290><c> accessing</c><00:11:12.800><c> the</c><00:11:13.100><c> Internet</c><00:11:13.870><c> so</c><00:11:14.870><c> go</c><00:11:15.200><c> ahead</c>
+
+00:11:15.280 --> 00:11:15.290 align:start position:0%
+of accessing the Internet so go ahead
+ 
+
+00:11:15.290 --> 00:11:16.720 align:start position:0%
+of accessing the Internet so go ahead
+and<00:11:15.380><c> grab</c><00:11:15.529><c> that</c><00:11:15.740><c> -</c><00:11:15.920><c> even</c><00:11:16.130><c> if</c><00:11:16.339><c> you're</c><00:11:16.459><c> not</c><00:11:16.579><c> our</c>
+
+00:11:16.720 --> 00:11:16.730 align:start position:0%
+and grab that - even if you're not our
+ 
+
+00:11:16.730 --> 00:11:19.990 align:start position:0%
+and grab that - even if you're not our
+proxy<00:11:17.180><c> so</c><00:11:17.779><c> normal</c><00:11:18.769><c> people</c><00:11:19.100><c> should</c><00:11:19.130><c> be</c><00:11:19.730><c> able</c><00:11:19.850><c> to</c>
+
+00:11:19.990 --> 00:11:20.000 align:start position:0%
+proxy so normal people should be able to
+ 
+
+00:11:20.000 --> 00:11:22.569 align:start position:0%
+proxy so normal people should be able to
+just<00:11:20.149><c> run</c><00:11:20.390><c> this</c><00:11:20.870><c> and</c><00:11:21.200><c> get</c><00:11:21.920><c> a</c><00:11:21.950><c> return</c><00:11:22.250><c> but</c><00:11:22.490><c> when</c>
+
+00:11:22.569 --> 00:11:22.579 align:start position:0%
+just run this and get a return but when
+ 
+
+00:11:22.579 --> 00:11:25.509 align:start position:0%
+just run this and get a return but when
+I<00:11:22.610><c> run</c><00:11:22.850><c> this</c><00:11:23.060><c> I</c><00:11:23.269><c> get</c><00:11:23.420><c> this</c><00:11:23.540><c> nasty</c><00:11:23.810><c> red</c><00:11:24.620><c> nonsense</c>
+
+00:11:25.509 --> 00:11:25.519 align:start position:0%
+I run this I get this nasty red nonsense
+ 
+
+00:11:25.519 --> 00:11:28.509 align:start position:0%
+I run this I get this nasty red nonsense
+about<00:11:25.670><c> an</c><00:11:25.880><c> SSL</c><00:11:26.420><c> certificate</c><00:11:26.470><c> fail</c><00:11:27.470><c> so</c><00:11:28.459><c> to</c>
+
+00:11:28.509 --> 00:11:28.519 align:start position:0%
+about an SSL certificate fail so to
+ 
+
+00:11:28.519 --> 00:11:30.670 align:start position:0%
+about an SSL certificate fail so to
+overcome<00:11:29.120><c> that</c><00:11:29.269><c> mmm</c>
+
+00:11:30.670 --> 00:11:30.680 align:start position:0%
+overcome that mmm
+ 
+
+00:11:30.680 --> 00:11:35.610 align:start position:0%
+overcome that mmm
+instead<00:11:31.640><c> I'm</c><00:11:31.940><c> going</c><00:11:32.209><c> to</c><00:11:32.329><c> import</c><00:11:33.310><c> import</c>
+
+00:11:35.610 --> 00:11:35.620 align:start position:0%
+instead I'm going to import import
+ 
+
+00:11:35.620 --> 00:11:38.199 align:start position:0%
+instead I'm going to import import
+requests<00:11:36.620><c> and</c><00:11:36.860><c> then</c><00:11:37.250><c> do</c><00:11:37.430><c> a</c><00:11:37.459><c> Rick</c><00:11:37.760><c> actually</c>
+
+00:11:38.199 --> 00:11:38.209 align:start position:0%
+requests and then do a Rick actually
+ 
+
+00:11:38.209 --> 00:11:41.069 align:start position:0%
+requests and then do a Rick actually
+I'll<00:11:38.300><c> just</c><00:11:38.360><c> say</c><00:11:38.540><c> this</c><00:11:38.690><c> I'll</c><00:11:38.870><c> say</c><00:11:39.019><c> web</c><00:11:39.290><c> equals</c>
+
+00:11:41.069 --> 00:11:41.079 align:start position:0%
+I'll just say this I'll say web equals
+ 
+
+00:11:41.079 --> 00:11:46.780 align:start position:0%
+I'll just say this I'll say web equals
+requests<00:11:42.079><c> I</c><00:11:42.170><c> get</c><00:11:42.649><c> and</c><00:11:42.980><c> I'm</c><00:11:43.970><c> gonna</c><00:11:44.180><c> get</c><00:11:45.790><c> this</c>
+
+00:11:46.780 --> 00:11:46.790 align:start position:0%
+requests I get and I'm gonna get this
+ 
+
+00:11:46.790 --> 00:11:49.960 align:start position:0%
+requests I get and I'm gonna get this
+paste<00:11:47.750><c> that</c><00:11:47.990><c> in</c><00:11:48.230><c> there</c><00:11:48.440><c> and</c><00:11:48.769><c> then</c><00:11:49.310><c> we'll</c><00:11:49.670><c> read</c>
+
+00:11:49.960 --> 00:11:49.970 align:start position:0%
+paste that in there and then we'll read
+ 
+
+00:11:49.970 --> 00:11:57.449 align:start position:0%
+paste that in there and then we'll read
+HTML<00:11:50.600><c> web</c><00:11:51.339><c> run</c><00:11:52.339><c> that</c><00:11:52.610><c> oh</c><00:11:55.600><c> could</c><00:11:56.600><c> not</c><00:11:56.810><c> read</c>
+
+00:11:57.449 --> 00:11:57.459 align:start position:0%
+HTML web run that oh could not read
+ 
+
+00:11:57.459 --> 00:12:03.759 align:start position:0%
+HTML web run that oh could not read
+requests<00:11:58.459><c> I</c><00:11:58.790><c> get</c><00:11:59.740><c> really</c><00:12:02.200><c> I</c><00:12:03.200><c> can't</c><00:12:03.500><c> decide</c><00:12:03.680><c> if</c>
+
+00:12:03.759 --> 00:12:03.769 align:start position:0%
+requests I get really I can't decide if
+ 
+
+00:12:03.769 --> 00:12:05.079 align:start position:0%
+requests I get really I can't decide if
+I<00:12:03.829><c> need</c><00:12:03.980><c> to</c><00:12:04.040><c> like</c><00:12:04.190><c> restart</c><00:12:04.550><c> the</c><00:12:04.670><c> kernel</c>
+
+00:12:05.079 --> 00:12:05.089 align:start position:0%
+I need to like restart the kernel
+ 
+
+00:12:05.089 --> 00:12:06.850 align:start position:0%
+I need to like restart the kernel
+because<00:12:05.360><c> I</c><00:12:05.420><c> just</c><00:12:05.570><c> installed</c><00:12:05.959><c> this</c><00:12:06.290><c> stuff</c><00:12:06.560><c> or</c>
+
+00:12:06.850 --> 00:12:06.860 align:start position:0%
+because I just installed this stuff or
+ 
+
+00:12:06.860 --> 00:12:11.100 align:start position:0%
+because I just installed this stuff or
+or<00:12:07.459><c> what</c><00:12:08.240><c> PT</c><00:12:08.570><c> dot</c><00:12:08.810><c> read</c><00:12:09.079><c> HT</c><00:12:09.560><c> Oh</c><00:12:09.709><c> Momo</c><00:12:10.279><c> Momo</c><00:12:10.399><c> okay</c>
+
+00:12:11.100 --> 00:12:11.110 align:start position:0%
+or what PT dot read HT Oh Momo Momo okay
+ 
+
+00:12:11.110 --> 00:12:13.930 align:start position:0%
+or what PT dot read HT Oh Momo Momo okay
+yeah<00:12:12.110><c> okay</c><00:12:12.709><c> so</c><00:12:13.190><c> actually</c><00:12:13.310><c> what</c><00:12:13.610><c> we</c><00:12:13.699><c> need</c><00:12:13.850><c> to</c>
+
+00:12:13.930 --> 00:12:13.940 align:start position:0%
+yeah okay so actually what we need to
+ 
+
+00:12:13.940 --> 00:12:18.189 align:start position:0%
+yeah okay so actually what we need to
+say<00:12:14.060><c> is</c><00:12:14.180><c> web</c><00:12:14.449><c> dot</c><00:12:15.670><c> dot</c><00:12:16.670><c> txt</c><00:12:17.180><c> what</c><00:12:17.750><c> I</c><00:12:17.779><c> need</c><00:12:18.079><c> to</c>
+
+00:12:18.189 --> 00:12:18.199 align:start position:0%
+say is web dot dot txt what I need to
+ 
+
+00:12:18.199 --> 00:12:22.860 align:start position:0%
+say is web dot dot txt what I need to
+say<00:12:18.320><c> is</c><00:12:18.440><c> what</c><00:12:18.589><c> it</c><00:12:18.740><c> takes</c><00:12:18.920><c> right</c><00:12:19.310><c> okay</c><00:12:20.029><c> great</c><00:12:21.279><c> so</c>
+
+00:12:22.860 --> 00:12:22.870 align:start position:0%
+say is what it takes right okay great so
+ 
+
+00:12:22.870 --> 00:12:25.630 align:start position:0%
+say is what it takes right okay great so
+but<00:12:23.870><c> again</c><00:12:24.079><c> if</c><00:12:24.290><c> you</c><00:12:24.470><c> aren't</c><00:12:25.010><c> having</c><00:12:25.220><c> issues</c>
+
+00:12:25.630 --> 00:12:25.640 align:start position:0%
+but again if you aren't having issues
+ 
+
+00:12:25.640 --> 00:12:26.800 align:start position:0%
+but again if you aren't having issues
+you<00:12:25.760><c> probably</c><00:12:26.029><c> need</c><00:12:26.240><c> to</c><00:12:26.269><c> do</c><00:12:26.390><c> this</c><00:12:26.480><c> if</c><00:12:26.690><c> you</c>
+
+00:12:26.800 --> 00:12:26.810 align:start position:0%
+you probably need to do this if you
+ 
+
+00:12:26.810 --> 00:12:28.930 align:start position:0%
+you probably need to do this if you
+continue<00:12:26.990><c> to</c><00:12:27.290><c> have</c><00:12:27.410><c> SSL</c><00:12:27.949><c> certs</c><00:12:28.190><c> issues</c><00:12:28.760><c> you</c>
+
+00:12:28.930 --> 00:12:28.940 align:start position:0%
+continue to have SSL certs issues you
+ 
+
+00:12:28.940 --> 00:12:31.630 align:start position:0%
+continue to have SSL certs issues you
+could<00:12:29.060><c> also</c><00:12:29.240><c> say</c><00:12:29.510><c> verify</c><00:12:30.110><c> equals</c><00:12:30.829><c> false</c><00:12:31.220><c> in</c>
+
+00:12:31.630 --> 00:12:31.640 align:start position:0%
+could also say verify equals false in
+ 
+
+00:12:31.640 --> 00:12:33.910 align:start position:0%
+could also say verify equals false in
+the<00:12:31.970><c> request</c><00:12:32.360><c> not</c><00:12:32.510><c> yet</c><00:12:32.779><c> for</c><00:12:33.320><c> some</c><00:12:33.470><c> reason</c><00:12:33.529><c> I</c>
+
+00:12:33.910 --> 00:12:33.920 align:start position:0%
+the request not yet for some reason I
+ 
+
+00:12:33.920 --> 00:12:36.430 align:start position:0%
+the request not yet for some reason I
+was<00:12:34.040><c> getting</c><00:12:34.279><c> a</c><00:12:34.339><c> certificate</c><00:12:34.640><c> issue</c><00:12:35.440><c> with</c>
+
+00:12:36.430 --> 00:12:36.440 align:start position:0%
+was getting a certificate issue with
+ 
+
+00:12:36.440 --> 00:12:39.040 align:start position:0%
+was getting a certificate issue with
+read<00:12:36.680><c> HTML</c><00:12:37.339><c> but</c><00:12:37.790><c> not</c><00:12:38.000><c> requests</c><00:12:38.660><c> despite</c>
+
+00:12:39.040 --> 00:12:39.050 align:start position:0%
+read HTML but not requests despite
+ 
+
+00:12:39.050 --> 00:12:41.130 align:start position:0%
+read HTML but not requests despite
+requests<00:12:39.649><c> verifying</c><00:12:40.160><c> the</c><00:12:40.310><c> SSL</c><00:12:40.790><c> certificate</c>
+
+00:12:41.130 --> 00:12:41.140 align:start position:0%
+requests verifying the SSL certificate
+ 
+
+00:12:41.140 --> 00:12:44.500 align:start position:0%
+requests verifying the SSL certificate
+by<00:12:42.140><c> default</c><00:12:42.589><c> I</c><00:12:42.829><c> have</c><00:12:43.220><c> no</c><00:12:43.910><c> idea</c><00:12:44.149><c> what's</c><00:12:44.300><c> going</c>
+
+00:12:44.500 --> 00:12:44.510 align:start position:0%
+by default I have no idea what's going
+ 
+
+00:12:44.510 --> 00:12:47.920 align:start position:0%
+by default I have no idea what's going
+on<00:12:44.630><c> there</c><00:12:44.839><c> but</c><00:12:45.140><c> anyway</c><00:12:45.589><c> cool</c><00:12:46.279><c> so</c><00:12:46.670><c> we</c><00:12:46.940><c> have</c><00:12:47.209><c> data</c>
+
+00:12:47.920 --> 00:12:47.930 align:start position:0%
+on there but anyway cool so we have data
+ 
+
+00:12:47.930 --> 00:12:51.310 align:start position:0%
+on there but anyway cool so we have data
+frames<00:12:48.440><c> ax</c><00:12:49.010><c> so</c><00:12:49.490><c> what</c><00:12:49.670><c> pandas</c><00:12:50.240><c> read</c><00:12:50.480><c> HTML</c><00:12:51.110><c> does</c>
+
+00:12:51.310 --> 00:12:51.320 align:start position:0%
+frames ax so what pandas read HTML does
+ 
+
+00:12:51.320 --> 00:12:55.030 align:start position:0%
+frames ax so what pandas read HTML does
+is<00:12:51.500><c> it</c><00:12:51.649><c> will</c><00:12:51.740><c> parse</c><00:12:52.100><c> that</c><00:12:52.310><c> website</c><00:12:52.790><c> and</c><00:12:54.040><c> and</c>
+
+00:12:55.030 --> 00:12:55.040 align:start position:0%
+is it will parse that website and and
+ 
+
+00:12:55.040 --> 00:12:57.790 align:start position:0%
+is it will parse that website and and
+then<00:12:55.399><c> return</c><00:12:56.000><c> a</c><00:12:56.209><c> list</c><00:12:56.750><c> of</c><00:12:56.990><c> data</c><00:12:57.170><c> frames</c><00:12:57.470><c> based</c>
+
+00:12:57.790 --> 00:12:57.800 align:start position:0%
+then return a list of data frames based
+ 
+
+00:12:57.800 --> 00:13:00.040 align:start position:0%
+then return a list of data frames based
+on<00:12:58.010><c> all</c><00:12:58.250><c> of</c><00:12:58.310><c> the</c><00:12:58.850><c> tables</c><00:12:59.029><c> it</c><00:12:59.329><c> finds</c><00:12:59.540><c> so</c><00:12:59.750><c> even</c><00:12:59.959><c> if</c>
+
+00:13:00.040 --> 00:13:00.050 align:start position:0%
+on all of the tables it finds so even if
+ 
+
+00:13:00.050 --> 00:13:01.630 align:start position:0%
+on all of the tables it finds so even if
+it<00:13:00.140><c> only</c><00:13:00.199><c> finds</c><00:13:00.529><c> one</c><00:13:00.740><c> table</c><00:13:01.130><c> it's</c><00:13:01.310><c> still</c><00:13:01.519><c> a</c>
+
+00:13:01.630 --> 00:13:01.640 align:start position:0%
+it only finds one table it's still a
+ 
+
+00:13:01.640 --> 00:13:04.750 align:start position:0%
+it only finds one table it's still a
+list<00:13:02.000><c> of</c><00:13:02.209><c> that</c><00:13:02.930><c> one</c><00:13:03.290><c> data</c><00:13:03.560><c> frame</c><00:13:03.890><c> so</c><00:13:04.399><c> for</c>
+
+00:13:04.750 --> 00:13:04.760 align:start position:0%
+list of that one data frame so for
+ 
+
+00:13:04.760 --> 00:13:09.280 align:start position:0%
+list of that one data frame so for
+example<00:13:05.209><c> for</c><00:13:05.600><c> DF</c><00:13:05.990><c> n</c><00:13:06.199><c> DF</c><00:13:06.709><c> sprin</c><00:13:07.550><c> DF</c><00:13:08.390><c> head</c><00:13:09.019><c> and</c>
+
+00:13:09.280 --> 00:13:09.290 align:start position:0%
+example for DF n DF sprin DF head and
+ 
+
+00:13:09.290 --> 00:13:12.790 align:start position:0%
+example for DF n DF sprin DF head and
+you<00:13:10.040><c> can</c><00:13:10.160><c> see</c><00:13:10.279><c> here</c><00:13:10.550><c> that</c><00:13:10.850><c> we</c><00:13:11.209><c> get</c><00:13:11.589><c> two</c><00:13:12.589><c> data</c>
+
+00:13:12.790 --> 00:13:12.800 align:start position:0%
+you can see here that we get two data
+ 
+
+00:13:12.800 --> 00:13:14.680 align:start position:0%
+you can see here that we get two data
+frames<00:13:13.069><c> one</c><00:13:13.370><c> is</c><00:13:13.640><c> clearly</c><00:13:14.149><c> states</c><00:13:14.420><c> the</c><00:13:14.660><c> other</c>
+
+00:13:14.680 --> 00:13:14.690 align:start position:0%
+frames one is clearly states the other
+ 
+
+00:13:14.690 --> 00:13:18.160 align:start position:0%
+frames one is clearly states the other
+one<00:13:15.110><c> is</c><00:13:15.260><c> like</c><00:13:15.440><c> territories</c><00:13:16.180><c> which</c><00:13:17.180><c> we</c>
+
+00:13:18.160 --> 00:13:18.170 align:start position:0%
+one is like territories which we
+ 
+
+00:13:18.170 --> 00:13:21.430 align:start position:0%
+one is like territories which we
+we<00:13:18.320><c> have</c><00:13:18.589><c> in</c><00:13:18.920><c> our</c><00:13:19.959><c> minimum</c><00:13:20.959><c> wage</c><00:13:21.110><c> data</c>
+
+00:13:21.430 --> 00:13:21.440 align:start position:0%
+we have in our minimum wage data
+ 
+
+00:13:21.440 --> 00:13:25.690 align:start position:0%
+we have in our minimum wage data
+probably<00:13:21.740><c> Puerto</c><00:13:22.100><c> Rico</c><00:13:22.310><c> and</c><00:13:22.490><c> Guam</c><00:13:22.519><c> but</c><00:13:24.700><c> for</c>
+
+00:13:25.690 --> 00:13:25.700 align:start position:0%
+probably Puerto Rico and Guam but for
+ 
+
+00:13:25.700 --> 00:13:28.509 align:start position:0%
+probably Puerto Rico and Guam but for
+now<00:13:25.790><c> we're</c><00:13:25.910><c> gonna</c><00:13:26.029><c> be</c><00:13:26.149><c> focused</c><00:13:26.540><c> on</c><00:13:26.920><c> the</c><00:13:27.920><c> main</c>
+
+00:13:28.509 --> 00:13:28.519 align:start position:0%
+now we're gonna be focused on the main
+ 
+
+00:13:28.519 --> 00:13:33.519 align:start position:0%
+now we're gonna be focused on the main
+one<00:13:28.790><c> which</c><00:13:29.180><c> will</c><00:13:29.360><c> be</c><00:13:29.389><c> DF</c><00:13:30.070><c> DF</c><00:13:31.070><c> 0</c><00:13:31.700><c> so</c><00:13:32.540><c> what</c><00:13:33.440><c> I'm</c>
+
+00:13:33.519 --> 00:13:33.529 align:start position:0%
+one which will be DF DF 0 so what I'm
+ 
+
+00:13:33.529 --> 00:13:37.810 align:start position:0%
+one which will be DF DF 0 so what I'm
+gonna<00:13:33.649><c> say</c><00:13:33.829><c> is</c><00:13:33.980><c> state</c><00:13:35.079><c> AB</c><00:13:36.130><c> for</c><00:13:37.130><c> abbreviation</c>
+
+00:13:37.810 --> 00:13:37.820 align:start position:0%
+gonna say is state AB for abbreviation
+ 
+
+00:13:37.820 --> 00:13:46.210 align:start position:0%
+gonna say is state AB for abbreviation
+equals<00:13:38.630><c> DF</c><00:13:39.310><c> 0</c><00:13:40.310><c> then</c><00:13:41.269><c> we'll</c><00:13:42.260><c> say</c><00:13:42.560><c> state</c><00:13:45.010><c> oops</c>
+
+00:13:46.210 --> 00:13:46.220 align:start position:0%
+equals DF 0 then we'll say state oops
+ 
+
+00:13:46.220 --> 00:13:50.170 align:start position:0%
+equals DF 0 then we'll say state oops
+dot<00:13:46.730><c> head</c><00:13:47.089><c> ok</c><00:13:47.959><c> great</c><00:13:48.320><c> hmm</c><00:13:48.829><c> so</c><00:13:49.040><c> that's</c><00:13:49.970><c> exactly</c>
+
+00:13:50.170 --> 00:13:50.180 align:start position:0%
+dot head ok great hmm so that's exactly
+ 
+
+00:13:50.180 --> 00:13:52.449 align:start position:0%
+dot head ok great hmm so that's exactly
+what<00:13:50.510><c> we</c><00:13:50.570><c> want</c><00:13:50.779><c> we</c><00:13:50.930><c> want</c><00:13:50.959><c> State</c><00:13:51.470><c> and</c><00:13:51.740><c> then</c><00:13:52.190><c> we</c>
+
+00:13:52.449 --> 00:13:52.459 align:start position:0%
+what we want we want State and then we
+ 
+
+00:13:52.459 --> 00:13:55.120 align:start position:0%
+what we want we want State and then we
+actually<00:13:52.639><c> don't</c><00:13:52.880><c> want</c><00:13:53.120><c> the</c><00:13:53.740><c> abbreviation</c><00:13:54.740><c> we</c>
+
+00:13:55.120 --> 00:13:55.130 align:start position:0%
+actually don't want the abbreviation we
+ 
+
+00:13:55.130 --> 00:13:56.769 align:start position:0%
+actually don't want the abbreviation we
+want<00:13:55.339><c> the</c><00:13:55.430><c> postal</c><00:13:55.850><c> code</c><00:13:55.880><c> right</c><00:13:56.420><c> we</c><00:13:56.570><c> want</c><00:13:56.720><c> the</c>
+
+00:13:56.769 --> 00:13:56.779 align:start position:0%
+want the postal code right we want the
+ 
+
+00:13:56.779 --> 00:13:59.530 align:start position:0%
+want the postal code right we want the
+two-letter<00:13:57.260><c> thing</c><00:13:57.649><c> so</c><00:13:58.399><c> what</c><00:13:59.029><c> I</c><00:13:59.060><c> want</c><00:13:59.300><c> to</c><00:13:59.360><c> do</c>
+
+00:13:59.530 --> 00:13:59.540 align:start position:0%
+two-letter thing so what I want to do
+ 
+
+00:13:59.540 --> 00:14:02.710 align:start position:0%
+two-letter thing so what I want to do
+now<00:13:59.810><c> is</c><00:14:00.339><c> just</c><00:14:01.339><c> in</c><00:14:01.459><c> case</c><00:14:01.670><c> we</c><00:14:02.000><c> have</c><00:14:02.180><c> issues</c><00:14:02.570><c> with</c>
+
+00:14:02.710 --> 00:14:02.720 align:start position:0%
+now is just in case we have issues with
+ 
+
+00:14:02.720 --> 00:14:04.300 align:start position:0%
+now is just in case we have issues with
+this<00:14:02.899><c> like</c><00:14:03.079><c> a</c><00:14:03.110><c> lot</c><00:14:03.380><c> of</c><00:14:03.440><c> times</c><00:14:03.620><c> if</c><00:14:03.800><c> I</c><00:14:03.920><c> have</c><00:14:03.949><c> I'm</c>
+
+00:14:04.300 --> 00:14:04.310 align:start position:0%
+this like a lot of times if I have I'm
+ 
+
+00:14:04.310 --> 00:14:05.590 align:start position:0%
+this like a lot of times if I have I'm
+writing<00:14:04.519><c> a</c><00:14:04.579><c> script</c><00:14:04.850><c> that</c><00:14:04.970><c> gets</c><00:14:05.269><c> information</c>
+
+00:14:05.590 --> 00:14:05.600 align:start position:0%
+writing a script that gets information
+ 
+
+00:14:05.600 --> 00:14:07.689 align:start position:0%
+writing a script that gets information
+from<00:14:05.899><c> the</c><00:14:06.139><c> web</c><00:14:06.290><c> I</c><00:14:06.589><c> really</c><00:14:07.130><c> probably</c><00:14:07.279><c> just</c><00:14:07.550><c> want</c>
+
+00:14:07.689 --> 00:14:07.699 align:start position:0%
+from the web I really probably just want
+ 
+
+00:14:07.699 --> 00:14:09.370 align:start position:0%
+from the web I really probably just want
+to<00:14:07.730><c> run</c><00:14:07.880><c> that</c><00:14:08.000><c> one</c><00:14:08.269><c> time</c><00:14:08.540><c> just</c><00:14:08.839><c> in</c><00:14:08.990><c> case</c><00:14:09.019><c> that</c>
+
+00:14:09.370 --> 00:14:09.380 align:start position:0%
+to run that one time just in case that
+ 
+
+00:14:09.380 --> 00:14:10.930 align:start position:0%
+to run that one time just in case that
+website<00:14:09.860><c> decides</c><00:14:10.220><c> I've</c><00:14:10.399><c> made</c><00:14:10.579><c> too</c><00:14:10.790><c> many</c>
+
+00:14:10.930 --> 00:14:10.940 align:start position:0%
+website decides I've made too many
+ 
+
+00:14:10.940 --> 00:14:13.720 align:start position:0%
+website decides I've made too many
+requests<00:14:11.570><c> or</c><00:14:11.720><c> you</c><00:14:12.230><c> know</c><00:14:12.350><c> whatever</c><00:14:12.589><c> so</c><00:14:12.980><c> while</c>
+
+00:14:13.720 --> 00:14:13.730 align:start position:0%
+requests or you know whatever so while
+ 
+
+00:14:13.730 --> 00:14:15.460 align:start position:0%
+requests or you know whatever so while
+we're<00:14:13.880><c> at</c><00:14:14.000><c> it</c><00:14:14.029><c> we</c><00:14:14.360><c> might</c><00:14:14.570><c> as</c><00:14:14.899><c> well</c><00:14:14.990><c> just</c><00:14:15.230><c> save</c>
+
+00:14:15.460 --> 00:14:15.470 align:start position:0%
+we're at it we might as well just save
+ 
+
+00:14:15.470 --> 00:14:21.790 align:start position:0%
+we're at it we might as well just save
+this<00:14:15.740><c> so</c><00:14:16.010><c> states</c><00:14:16.519><c> AB</c><00:14:17.709><c> dot</c><00:14:18.709><c> to</c><00:14:19.339><c> CSV</c><00:14:20.240><c> and</c><00:14:21.079><c> then</c>
+
+00:14:21.790 --> 00:14:21.800 align:start position:0%
+this so states AB dot to CSV and then
+ 
+
+00:14:21.800 --> 00:14:24.100 align:start position:0%
+this so states AB dot to CSV and then
+we'll<00:14:21.949><c> save</c><00:14:22.220><c> that</c><00:14:22.250><c> as</c><00:14:22.610><c> datasets</c><00:14:23.180><c> and</c><00:14:23.660><c> we'll</c>
+
+00:14:24.100 --> 00:14:24.110 align:start position:0%
+we'll save that as datasets and we'll
+ 
+
+00:14:24.110 --> 00:14:28.750 align:start position:0%
+we'll save that as datasets and we'll
+make<00:14:24.260><c> that</c><00:14:24.910><c> state</c><00:14:25.910><c> have</c><00:14:26.800><c> CSV</c><00:14:27.800><c> now</c><00:14:28.010><c> a</c><00:14:28.250><c> couple</c>
+
+00:14:28.750 --> 00:14:28.760 align:start position:0%
+make that state have CSV now a couple
+ 
+
+00:14:28.760 --> 00:14:29.949 align:start position:0%
+make that state have CSV now a couple
+things<00:14:28.850><c> to</c><00:14:29.029><c> think</c><00:14:29.120><c> about</c><00:14:29.269><c> when</c><00:14:29.600><c> you</c><00:14:29.720><c> save</c>
+
+00:14:29.949 --> 00:14:29.959 align:start position:0%
+things to think about when you save
+ 
+
+00:14:29.959 --> 00:14:33.810 align:start position:0%
+things to think about when you save
+things<00:14:30.230><c> to</c><00:14:30.410><c> a</c><00:14:30.440><c> CSV</c><00:14:30.980><c> remember</c><00:14:31.670><c> a</c><00:14:32.230><c> CSV</c><00:14:33.230><c> so</c>
+
+00:14:33.810 --> 00:14:33.820 align:start position:0%
+things to a CSV remember a CSV so
+ 
+
+00:14:33.820 --> 00:14:35.650 align:start position:0%
+things to a CSV remember a CSV so
+unpatentable<00:14:34.820><c> Eve's</c>
+
+00:14:35.650 --> 00:14:35.660 align:start position:0%
+unpatentable Eve's
+ 
+
+00:14:35.660 --> 00:14:39.250 align:start position:0%
+unpatentable Eve's
+as<00:14:35.779><c> it</c><00:14:36.079><c> should</c><00:14:36.320><c> your</c><00:14:36.829><c> index</c><00:14:37.430><c> is</c><00:14:37.579><c> meaningful</c><00:14:38.449><c> so</c>
+
+00:14:39.250 --> 00:14:39.260 align:start position:0%
+as it should your index is meaningful so
+ 
+
+00:14:39.260 --> 00:14:43.680 align:start position:0%
+as it should your index is meaningful so
+when<00:14:39.800><c> you</c><00:14:40.010><c> save</c><00:14:40.399><c> something</c><00:14:41.060><c> to</c><00:14:41.300><c> a</c><00:14:41.329><c> CSV</c><00:14:42.019><c> file</c>
+
+00:14:43.680 --> 00:14:43.690 align:start position:0%
+when you save something to a CSV file
+ 
+
+00:14:43.690 --> 00:14:46.360 align:start position:0%
+when you save something to a CSV file
+CSV<00:14:44.690><c> does</c><00:14:44.930><c> not</c><00:14:45.170><c> understand</c><00:14:45.769><c> anything's</c><00:14:46.220><c> in</c>
+
+00:14:46.360 --> 00:14:46.370 align:start position:0%
+CSV does not understand anything's in
+ 
+
+00:14:46.370 --> 00:14:50.170 align:start position:0%
+CSV does not understand anything's in
+index<00:14:46.699><c> so</c><00:14:47.300><c> when</c><00:14:47.510><c> you</c><00:14:47.630><c> save</c><00:14:48.670><c> you</c><00:14:49.670><c> want</c><00:14:49.880><c> to</c><00:14:50.000><c> say</c>
+
+00:14:50.170 --> 00:14:50.180 align:start position:0%
+index so when you save you want to say
+ 
+
+00:14:50.180 --> 00:14:52.269 align:start position:0%
+index so when you save you want to say
+like<00:14:50.480><c> I'm</c><00:14:50.660><c> trying</c><00:14:50.930><c> to</c><00:14:51.079><c> I</c><00:14:51.350><c> can't</c><00:14:51.680><c> even</c><00:14:51.769><c> fully</c>
+
+00:14:52.269 --> 00:14:52.279 align:start position:0%
+like I'm trying to I can't even fully
+ 
+
+00:14:52.279 --> 00:14:54.250 align:start position:0%
+like I'm trying to I can't even fully
+remember<00:14:52.640><c> it's</c><00:14:52.940><c> like</c><00:14:53.060><c> either</c><00:14:53.240><c> indict</c><00:14:53.930><c> I</c><00:14:54.019><c> think</c>
+
+00:14:54.250 --> 00:14:54.260 align:start position:0%
+remember it's like either indict I think
+ 
+
+00:14:54.260 --> 00:14:58.259 align:start position:0%
+remember it's like either indict I think
+index<00:14:55.040><c> equals</c><00:14:55.399><c> false</c><00:14:55.670><c> on</c><00:14:56.029><c> save</c><00:14:56.570><c> so</c><00:14:56.959><c> pandas</c><00:14:57.529><c> to</c>
+
+00:14:58.259 --> 00:14:58.269 align:start position:0%
+index equals false on save so pandas to
+ 
+
+00:14:58.269 --> 00:15:01.120 align:start position:0%
+index equals false on save so pandas to
+CSV<00:14:59.269><c> and</c><00:14:59.480><c> then</c><00:15:00.019><c> when</c><00:15:00.170><c> you</c><00:15:00.260><c> read</c><00:15:00.440><c> it</c><00:15:00.589><c> in</c><00:15:00.800><c> I</c><00:15:00.949><c> want</c>
+
+00:15:01.120 --> 00:15:01.130 align:start position:0%
+CSV and then when you read it in I want
+ 
+
+00:15:01.130 --> 00:15:03.790 align:start position:0%
+CSV and then when you read it in I want
+to<00:15:01.190><c> say</c><00:15:01.279><c> it's</c><00:15:01.459><c> just</c><00:15:01.519><c> index</c><00:15:02.000><c> call</c><00:15:02.449><c> so</c><00:15:03.260><c> yeah</c>
+
+00:15:03.790 --> 00:15:03.800 align:start position:0%
+to say it's just index call so yeah
+ 
+
+00:15:03.800 --> 00:15:06.040 align:start position:0%
+to say it's just index call so yeah
+index<00:15:04.339><c> default</c><00:15:04.910><c> is</c><00:15:05.060><c> true</c><00:15:05.360><c> so</c><00:15:05.600><c> when</c><00:15:05.750><c> we</c><00:15:05.870><c> go</c><00:15:05.990><c> to</c>
+
+00:15:06.040 --> 00:15:06.050 align:start position:0%
+index default is true so when we go to
+ 
+
+00:15:06.050 --> 00:15:09.610 align:start position:0%
+index default is true so when we go to
+save<00:15:06.380><c> this</c><00:15:06.680><c> it's</c><00:15:07.459><c> gonna</c><00:15:07.699><c> assume</c><00:15:08.630><c> it</c><00:15:09.199><c> wants</c><00:15:09.560><c> us</c>
+
+00:15:09.610 --> 00:15:09.620 align:start position:0%
+save this it's gonna assume it wants us
+ 
+
+00:15:09.620 --> 00:15:11.559 align:start position:0%
+save this it's gonna assume it wants us
+to<00:15:09.680><c> save</c><00:15:09.980><c> the</c><00:15:10.130><c> index</c><00:15:10.519><c> so</c><00:15:11.120><c> let's</c><00:15:11.269><c> say</c><00:15:11.329><c> we</c><00:15:11.449><c> do</c>
+
+00:15:11.559 --> 00:15:11.569 align:start position:0%
+to save the index so let's say we do
+ 
+
+00:15:11.569 --> 00:15:13.780 align:start position:0%
+to save the index so let's say we do
+that<00:15:11.720><c> then</c><00:15:12.230><c> we</c><00:15:12.319><c> read</c><00:15:12.529><c> it</c><00:15:12.649><c> back</c><00:15:12.800><c> in</c><00:15:13.010><c> state</c><00:15:13.459><c> and</c>
+
+00:15:13.780 --> 00:15:13.790 align:start position:0%
+that then we read it back in state and
+ 
+
+00:15:13.790 --> 00:15:18.910 align:start position:0%
+that then we read it back in state and
+dots<00:15:15.040><c> or</c><00:15:16.040><c> equals</c><00:15:16.579><c> PD</c><00:15:16.910><c> to</c><00:15:17.120><c> read</c><00:15:17.540><c> CSV</c><00:15:18.170><c> and</c>
+
+00:15:18.910 --> 00:15:18.920 align:start position:0%
+dots or equals PD to read CSV and
+ 
+
+00:15:18.920 --> 00:15:21.069 align:start position:0%
+dots or equals PD to read CSV and
+actually<00:15:19.639><c> let's</c><00:15:19.790><c> just</c><00:15:19.819><c> read</c><00:15:20.089><c> this</c><00:15:20.269><c> in</c><00:15:20.449><c> when</c><00:15:20.990><c> we</c>
+
+00:15:21.069 --> 00:15:21.079 align:start position:0%
+actually let's just read this in when we
+ 
+
+00:15:21.079 --> 00:15:26.840 align:start position:0%
+actually let's just read this in when we
+go<00:15:21.170><c> to</c><00:15:21.230><c> read</c><00:15:21.470><c> this</c><00:15:21.649><c> in</c><00:15:22.300><c> suddenly</c><00:15:24.550><c> stay</c>
+
+00:15:26.840 --> 00:15:26.850 align:start position:0%
+go to read this in suddenly stay
+ 
+
+00:15:26.850 --> 00:15:30.239 align:start position:0%
+go to read this in suddenly stay
+head<00:15:27.850><c> suddenly</c><00:15:28.689><c> what</c><00:15:28.989><c> we</c><00:15:29.110><c> have</c><00:15:29.259><c> is</c><00:15:29.470><c> two</c><00:15:30.009><c> of</c>
+
+00:15:30.239 --> 00:15:30.249 align:start position:0%
+head suddenly what we have is two of
+ 
+
+00:15:30.249 --> 00:15:32.309 align:start position:0%
+head suddenly what we have is two of
+these<00:15:30.369><c> columns</c><00:15:30.850><c> and</c><00:15:31.059><c> as</c><00:15:31.449><c> time</c><00:15:31.720><c> is</c><00:15:31.869><c> gonna</c><00:15:31.989><c> go</c><00:15:32.199><c> on</c>
+
+00:15:32.309 --> 00:15:32.319 align:start position:0%
+these columns and as time is gonna go on
+ 
+
+00:15:32.319 --> 00:15:33.569 align:start position:0%
+these columns and as time is gonna go on
+it's<00:15:32.470><c> only</c><00:15:32.589><c> going</c><00:15:32.769><c> to</c><00:15:32.860><c> keep</c><00:15:33.040><c> getting</c><00:15:33.279><c> bigger</c>
+
+00:15:33.569 --> 00:15:33.579 align:start position:0%
+it's only going to keep getting bigger
+ 
+
+00:15:33.579 --> 00:15:35.669 align:start position:0%
+it's only going to keep getting bigger
+and<00:15:33.759><c> bigger</c><00:15:34.029><c> and</c><00:15:34.239><c> bigger</c><00:15:34.329><c> so</c><00:15:35.170><c> if</c><00:15:35.319><c> you</c><00:15:35.470><c> are</c>
+
+00:15:35.669 --> 00:15:35.679 align:start position:0%
+and bigger and bigger so if you are
+ 
+
+00:15:35.679 --> 00:15:38.280 align:start position:0%
+and bigger and bigger so if you are
+consistently<00:15:36.399><c> saving</c><00:15:36.850><c> and</c><00:15:36.970><c> reloading</c><00:15:37.449><c> some</c>
+
+00:15:38.280 --> 00:15:38.290 align:start position:0%
+consistently saving and reloading some
+ 
+
+00:15:38.290 --> 00:15:40.410 align:start position:0%
+consistently saving and reloading some
+sort<00:15:38.470><c> of</c><00:15:38.529><c> data</c><00:15:38.739><c> set</c><00:15:38.949><c> this</c><00:15:39.550><c> will</c><00:15:39.759><c> cause</c><00:15:39.910><c> trouble</c>
+
+00:15:40.410 --> 00:15:40.420 align:start position:0%
+sort of data set this will cause trouble
+ 
+
+00:15:40.420 --> 00:15:43.229 align:start position:0%
+sort of data set this will cause trouble
+so<00:15:41.199><c> instead</c><00:15:41.800><c> what</c><00:15:41.949><c> you</c><00:15:42.069><c> want</c><00:15:42.100><c> to</c><00:15:42.309><c> do</c><00:15:42.429><c> is</c><00:15:42.549><c> is</c><00:15:42.790><c> in</c>
+
+00:15:43.229 --> 00:15:43.239 align:start position:0%
+so instead what you want to do is is in
+ 
+
+00:15:43.239 --> 00:15:46.019 align:start position:0%
+so instead what you want to do is is in
+one<00:15:44.049><c> or</c><00:15:44.379><c> the</c><00:15:44.410><c> other</c><00:15:44.739><c> you</c><00:15:45.100><c> know</c><00:15:45.610><c> one</c><00:15:45.819><c> way</c><00:15:45.970><c> you</c>
+
+00:15:46.019 --> 00:15:46.029 align:start position:0%
+one or the other you know one way you
+ 
+
+00:15:46.029 --> 00:15:49.049 align:start position:0%
+one or the other you know one way you
+could<00:15:46.389><c> say</c><00:15:46.720><c> is</c><00:15:46.959><c> you</c><00:15:47.439><c> could</c><00:15:47.709><c> say</c><00:15:47.949><c> index</c><00:15:48.519><c> call</c>
+
+00:15:49.049 --> 00:15:49.059 align:start position:0%
+could say is you could say index call
+ 
+
+00:15:49.059 --> 00:15:52.499 align:start position:0%
+could say is you could say index call
+equals<00:15:49.839><c> zero</c><00:15:50.829><c> and</c><00:15:51.160><c> every</c><00:15:51.879><c> time</c><00:15:52.059><c> we</c><00:15:52.179><c> read</c><00:15:52.329><c> this</c>
+
+00:15:52.499 --> 00:15:52.509 align:start position:0%
+equals zero and every time we read this
+ 
+
+00:15:52.509 --> 00:15:55.650 align:start position:0%
+equals zero and every time we read this
+in<00:15:52.749><c> 0</c><00:15:53.290><c> 1</c><00:15:53.470><c> 2</c><00:15:53.619><c> 3</c><00:15:53.649><c> 4</c><00:15:53.889><c> will</c><00:15:54.249><c> always</c><00:15:54.850><c> be</c><00:15:55.089><c> your</c><00:15:55.269><c> index</c>
+
+00:15:55.650 --> 00:15:55.660 align:start position:0%
+in 0 1 2 3 4 will always be your index
+ 
+
+00:15:55.660 --> 00:15:58.530 align:start position:0%
+in 0 1 2 3 4 will always be your index
+call<00:15:55.980><c> alternatively</c><00:15:56.980><c> we</c><00:15:57.610><c> could</c><00:15:57.910><c> even</c><00:15:58.119><c> say</c>
+
+00:15:58.530 --> 00:15:58.540 align:start position:0%
+call alternatively we could even say
+ 
+
+00:15:58.540 --> 00:16:05.669 align:start position:0%
+call alternatively we could even say
+here<00:15:59.459><c> index</c><00:16:00.459><c> equals</c><00:16:01.980><c> false</c><00:16:03.869><c> save</c><00:16:04.869><c> that</c><00:16:05.230><c> now</c>
+
+00:16:05.669 --> 00:16:05.679 align:start position:0%
+here index equals false save that now
+ 
+
+00:16:05.679 --> 00:16:09.269 align:start position:0%
+here index equals false save that now
+the<00:16:05.739><c> index</c><00:16:06.429><c> data</c><00:16:06.670><c> won't</c><00:16:06.999><c> even</c><00:16:07.360><c> be</c><00:16:07.509><c> saved</c><00:16:07.959><c> so</c><00:16:08.470><c> we</c>
+
+00:16:09.269 --> 00:16:09.279 align:start position:0%
+the index data won't even be saved so we
+ 
+
+00:16:09.279 --> 00:16:11.789 align:start position:0%
+the index data won't even be saved so we
+could<00:16:09.459><c> do</c><00:16:09.610><c> this</c><00:16:09.910><c> and</c><00:16:10.449><c> it</c><00:16:10.929><c> looks</c><00:16:11.139><c> yet</c><00:16:11.410><c> again</c><00:16:11.649><c> the</c>
+
+00:16:11.789 --> 00:16:11.799 align:start position:0%
+could do this and it looks yet again the
+ 
+
+00:16:11.799 --> 00:16:13.979 align:start position:0%
+could do this and it looks yet again the
+same<00:16:12.040><c> or</c><00:16:12.579><c> we</c><00:16:13.059><c> could</c><00:16:13.239><c> even</c><00:16:13.360><c> go</c><00:16:13.540><c> even</c><00:16:13.839><c> further</c>
+
+00:16:13.979 --> 00:16:13.989 align:start position:0%
+same or we could even go even further
+ 
+
+00:16:13.989 --> 00:16:17.819 align:start position:0%
+same or we could even go even further
+and<00:16:14.199><c> say</c><00:16:14.439><c> index</c><00:16:15.129><c> call</c><00:16:15.610><c> equals</c><00:16:16.209><c> 0</c><00:16:16.600><c> and</c><00:16:16.959><c> boom</c><00:16:17.799><c> now</c>
+
+00:16:17.819 --> 00:16:17.829 align:start position:0%
+and say index call equals 0 and boom now
+ 
+
+00:16:17.829 --> 00:16:19.619 align:start position:0%
+and say index call equals 0 and boom now
+we<00:16:18.069><c> just</c><00:16:18.309><c> have</c><00:16:18.429><c> the</c><00:16:18.549><c> state</c><00:16:18.759><c> abbreviation</c><00:16:19.480><c> in</c>
+
+00:16:19.619 --> 00:16:19.629 align:start position:0%
+we just have the state abbreviation in
+ 
+
+00:16:19.629 --> 00:16:22.319 align:start position:0%
+we just have the state abbreviation in
+postal<00:16:20.170><c> code</c><00:16:20.439><c> so</c><00:16:21.160><c> there's</c><00:16:21.639><c> you</c><00:16:22.029><c> know</c><00:16:22.149><c> a</c>
+
+00:16:22.319 --> 00:16:22.329 align:start position:0%
+postal code so there's you know a
+ 
+
+00:16:22.329 --> 00:16:25.379 align:start position:0%
+postal code so there's you know a
+million<00:16:22.899><c> ways</c><00:16:23.319><c> that</c><00:16:24.279><c> we</c><00:16:24.399><c> can</c><00:16:24.610><c> do</c><00:16:24.850><c> this</c><00:16:25.029><c> thing</c>
+
+00:16:25.379 --> 00:16:25.389 align:start position:0%
+million ways that we can do this thing
+ 
+
+00:16:25.389 --> 00:16:28.530 align:start position:0%
+million ways that we can do this thing
+that<00:16:25.600><c> we're</c><00:16:25.749><c> trying</c><00:16:25.989><c> to</c><00:16:26.139><c> do</c><00:16:26.489><c> so</c><00:16:27.489><c> the</c><00:16:28.389><c> next</c>
+
+00:16:28.530 --> 00:16:28.540 align:start position:0%
+that we're trying to do so the next
+ 
+
+00:16:28.540 --> 00:16:30.949 align:start position:0%
+that we're trying to do so the next
+thing<00:16:28.689><c> I</c><00:16:28.779><c> want</c><00:16:28.959><c> us</c><00:16:29.049><c> to</c><00:16:29.170><c> do</c><00:16:29.319><c> is</c><00:16:29.559><c> go</c><00:16:30.160><c> ahead</c><00:16:30.309><c> and</c>
+
+00:16:30.949 --> 00:16:30.959 align:start position:0%
+thing I want us to do is go ahead and
+ 
+
+00:16:30.959 --> 00:16:33.389 align:start position:0%
+thing I want us to do is go ahead and
+convert<00:16:31.959><c> this</c><00:16:32.170><c> to</c><00:16:32.559><c> some</c><00:16:32.740><c> sort</c><00:16:32.949><c> of</c><00:16:33.009><c> meaningful</c>
+
+00:16:33.389 --> 00:16:33.399 align:start position:0%
+convert this to some sort of meaningful
+ 
+
+00:16:33.399 --> 00:16:34.949 align:start position:0%
+convert this to some sort of meaningful
+dictionary<00:16:34.119><c> so</c><00:16:34.360><c> the</c><00:16:34.449><c> way</c><00:16:34.540><c> I'm</c><00:16:34.689><c> going</c><00:16:34.779><c> to</c><00:16:34.869><c> say</c>
+
+00:16:34.949 --> 00:16:34.959 align:start position:0%
+dictionary so the way I'm going to say
+ 
+
+00:16:34.959 --> 00:16:41.369 align:start position:0%
+dictionary so the way I'm going to say
+that<00:16:35.139><c> is</c><00:16:35.290><c> AB</c><00:16:36.059><c> dict</c><00:16:37.059><c> equals</c><00:16:37.720><c> States</c><00:16:38.379><c> AB</c><00:16:40.379><c> and</c>
+
+00:16:41.369 --> 00:16:41.379 align:start position:0%
+that is AB dict equals States AB and
+ 
+
+00:16:41.379 --> 00:16:43.439 align:start position:0%
+that is AB dict equals States AB and
+then<00:16:41.619><c> what</c><00:16:41.769><c> we</c><00:16:41.860><c> want</c><00:16:41.980><c> to</c><00:16:42.069><c> say</c><00:16:42.339><c> is</c><00:16:42.610><c> the</c><00:16:43.119><c> only</c>
+
+00:16:43.439 --> 00:16:43.449 align:start position:0%
+then what we want to say is the only
+ 
+
+00:16:43.449 --> 00:16:45.119 align:start position:0%
+then what we want to say is the only
+column<00:16:43.779><c> we're</c><00:16:43.899><c> actually</c><00:16:44.019><c> interested</c><00:16:44.619><c> in</c><00:16:44.709><c> here</c>
+
+00:16:45.119 --> 00:16:45.129 align:start position:0%
+column we're actually interested in here
+ 
+
+00:16:45.129 --> 00:16:49.379 align:start position:0%
+column we're actually interested in here
+is<00:16:45.839><c> postal</c><00:16:46.839><c> code</c><00:16:47.799><c> again</c><00:16:48.309><c> don't</c><00:16:48.549><c> forget</c><00:16:48.610><c> double</c>
+
+00:16:49.379 --> 00:16:49.389 align:start position:0%
+is postal code again don't forget double
+ 
+
+00:16:49.389 --> 00:16:52.259 align:start position:0%
+is postal code again don't forget double
+square<00:16:50.019><c> brackets</c><00:16:50.549><c> otherwise</c><00:16:51.549><c> it's</c><00:16:52.149><c> gonna</c>
+
+00:16:52.259 --> 00:16:52.269 align:start position:0%
+square brackets otherwise it's gonna
+ 
+
+00:16:52.269 --> 00:16:54.960 align:start position:0%
+square brackets otherwise it's gonna
+treat<00:16:52.600><c> it</c><00:16:52.660><c> like</c><00:16:52.749><c> a</c><00:16:52.899><c> series</c><00:16:53.439><c> and</c><00:16:53.799><c> then</c><00:16:54.189><c> we</c><00:16:54.790><c> say</c>
+
+00:16:54.960 --> 00:16:54.970 align:start position:0%
+treat it like a series and then we say
+ 
+
+00:16:54.970 --> 00:16:58.859 align:start position:0%
+treat it like a series and then we say
+dot<00:16:55.209><c> two</c><00:16:55.869><c> dict</c><00:16:56.999><c> underscore</c><00:16:57.999><c> there</c><00:16:58.209><c> dot</c><00:16:58.540><c> two</c>
+
+00:16:58.859 --> 00:16:58.869 align:start position:0%
+dot two dict underscore there dot two
+ 
+
+00:16:58.869 --> 00:17:04.679 align:start position:0%
+dot two dict underscore there dot two
+dict<00:16:59.709><c> and</c><00:17:00.269><c> now</c><00:17:01.799><c> let's</c><00:17:02.799><c> just</c><00:17:02.949><c> do</c><00:17:03.069><c> AB</c><00:17:03.309><c> Dix</c><00:17:04.029><c> real</c>
+
+00:17:04.679 --> 00:17:04.689 align:start position:0%
+dict and now let's just do AB Dix real
+ 
+
+00:17:04.689 --> 00:17:10.079 align:start position:0%
+dict and now let's just do AB Dix real
+quick<00:17:04.929><c> boom</c><00:17:05.289><c> so</c><00:17:05.949><c> now</c><00:17:07.409><c> we</c><00:17:08.409><c> have</c><00:17:08.880><c> pretty</c><00:17:09.880><c> much</c>
+
+00:17:10.079 --> 00:17:10.089 align:start position:0%
+quick boom so now we have pretty much
+ 
+
+00:17:10.089 --> 00:17:12.090 align:start position:0%
+quick boom so now we have pretty much
+what<00:17:10.360><c> we</c><00:17:10.480><c> want</c><00:17:10.779><c> but</c><00:17:11.020><c> it</c><00:17:11.139><c> starts</c><00:17:11.470><c> with</c><00:17:11.529><c> postal</c>
+
+00:17:12.090 --> 00:17:12.100 align:start position:0%
+what we want but it starts with postal
+ 
+
+00:17:12.100 --> 00:17:14.129 align:start position:0%
+what we want but it starts with postal
+code<00:17:12.339><c> so</c><00:17:12.880><c> so</c><00:17:13.029><c> I'm</c><00:17:13.089><c> gonna</c><00:17:13.209><c> say</c><00:17:13.360><c> AB</c><00:17:13.569><c> dict</c>
+
+00:17:14.129 --> 00:17:14.139 align:start position:0%
+code so so I'm gonna say AB dict
+ 
+
+00:17:14.139 --> 00:17:23.069 align:start position:0%
+code so so I'm gonna say AB dict
+equals<00:17:14.559><c> a</c><00:17:15.089><c> dict</c><00:17:17.819><c> postal</c><00:17:18.990><c> code</c><00:17:21.720><c> now</c><00:17:22.720><c> let's</c>
+
+00:17:23.069 --> 00:17:23.079 align:start position:0%
+equals a dict postal code now let's
+ 
+
+00:17:23.079 --> 00:17:28.079 align:start position:0%
+equals a dict postal code now let's
+print<00:17:23.500><c> AB</c><00:17:24.120><c> Dix</c><00:17:25.409><c> okay</c><00:17:26.409><c> now</c><00:17:27.189><c> that</c><00:17:27.789><c> is</c><00:17:27.819><c> a</c>
+
+00:17:28.079 --> 00:17:28.089 align:start position:0%
+print AB Dix okay now that is a
+ 
+
+00:17:28.089 --> 00:17:31.620 align:start position:0%
+print AB Dix okay now that is a
+dictionary<00:17:28.720><c> that</c><00:17:28.929><c> we</c><00:17:29.020><c> can</c><00:17:29.230><c> easily</c><00:17:29.500><c> map</c><00:17:30.600><c> to</c><00:17:31.600><c> a</c>
+
+00:17:31.620 --> 00:17:31.630 align:start position:0%
+dictionary that we can easily map to a
+ 
+
+00:17:31.630 --> 00:17:38.279 align:start position:0%
+dictionary that we can easily map to a
+column<00:17:32.200><c> so</c><00:17:32.799><c> now</c><00:17:33.010><c> let's</c><00:17:33.730><c> just</c><00:17:33.789><c> try</c><00:17:37.049><c> yeah</c><00:17:38.049><c> we'll</c>
+
+00:17:38.279 --> 00:17:38.289 align:start position:0%
+column so now let's just try yeah we'll
+ 
+
+00:17:38.289 --> 00:17:39.570 align:start position:0%
+column so now let's just try yeah we'll
+just<00:17:38.320><c> say</c><00:17:38.529><c> this</c><00:17:38.740><c> we'll</c><00:17:38.919><c> say</c><00:17:39.039><c> actually</c><00:17:39.490><c> we</c>
+
+00:17:39.570 --> 00:17:39.580 align:start position:0%
+just say this we'll say actually we
+ 
+
+00:17:39.580 --> 00:17:39.870 align:start position:0%
+just say this we'll say actually we
+don't
+
+00:17:39.870 --> 00:17:39.880 align:start position:0%
+don't
+ 
+
+00:17:39.880 --> 00:17:41.220 align:start position:0%
+don't
+to<00:17:39.970><c> map</c><00:17:40.150><c> it</c><00:17:40.270><c> to</c><00:17:40.300><c> a</c><00:17:40.420><c> column</c><00:17:40.810><c> we</c><00:17:40.900><c> could</c><00:17:41.020><c> just</c><00:17:41.170><c> say</c>
+
+00:17:41.220 --> 00:17:41.230 align:start position:0%
+to map it to a column we could just say
+ 
+
+00:17:41.230 --> 00:17:45.480 align:start position:0%
+to map it to a column we could just say
+labels<00:17:41.730><c> equals</c><00:17:42.930><c> equals</c><00:17:43.930><c> and</c><00:17:44.500><c> then</c><00:17:45.250><c> it'll</c><00:17:45.430><c> be</c>
+
+00:17:45.480 --> 00:17:45.490 align:start position:0%
+labels equals equals and then it'll be
+ 
+
+00:17:45.490 --> 00:17:52.700 align:start position:0%
+labels equals equals and then it'll be
+AB<00:17:45.820><c> dict</c><00:17:46.810><c> C</c><00:17:47.500><c> or</c><00:17:48.190><c> C</c><00:17:48.760><c> and</c><00:17:49.030><c> min</c><00:17:49.860><c> wage</c><00:17:50.860><c> cor</c><00:17:51.430><c> dot</c>
+
+00:17:52.700 --> 00:17:52.710 align:start position:0%
+AB dict C or C and min wage cor dot
+ 
+
+00:17:52.710 --> 00:17:56.730 align:start position:0%
+AB dict C or C and min wage cor dot
+columns<00:17:54.660><c> try</c><00:17:55.660><c> that</c><00:17:55.870><c> out</c><00:17:55.900><c> okay</c><00:17:56.350><c> we</c><00:17:56.500><c> don't</c><00:17:56.620><c> have</c>
+
+00:17:56.730 --> 00:17:56.740 align:start position:0%
+columns try that out okay we don't have
+ 
+
+00:17:56.740 --> 00:18:00.780 align:start position:0%
+columns try that out okay we don't have
+federal<00:17:57.460><c> FS</c><00:17:58.210><c> or</c><00:17:59.050><c> whatever</c><00:17:59.530><c> so</c><00:18:00.010><c> what</c><00:18:00.580><c> we</c><00:18:00.640><c> need</c>
+
+00:18:00.780 --> 00:18:00.790 align:start position:0%
+federal FS or whatever so what we need
+ 
+
+00:18:00.790 --> 00:18:03.210 align:start position:0%
+federal FS or whatever so what we need
+to<00:18:00.820><c> do</c><00:18:00.970><c> is</c><00:18:01.090><c> just</c><00:18:01.240><c> set</c><00:18:01.390><c> a</c><00:18:01.450><c> new</c><00:18:01.740><c> value</c><00:18:02.740><c> in</c><00:18:02.920><c> our</c><00:18:03.010><c> AB</c>
+
+00:18:03.210 --> 00:18:03.220 align:start position:0%
+to do is just set a new value in our AB
+ 
+
+00:18:03.220 --> 00:18:04.580 align:start position:0%
+to do is just set a new value in our AB
+dict
+
+00:18:04.580 --> 00:18:04.590 align:start position:0%
+dict
+ 
+
+00:18:04.590 --> 00:18:08.960 align:start position:0%
+dict
+and<00:18:05.590><c> we'll</c><00:18:06.130><c> just</c><00:18:06.340><c> add</c><00:18:06.520><c> this</c><00:18:06.760><c> in</c><00:18:07.200><c> really</c><00:18:08.200><c> quick</c>
+
+00:18:08.960 --> 00:18:08.970 align:start position:0%
+and we'll just add this in really quick
+ 
+
+00:18:08.970 --> 00:18:14.370 align:start position:0%
+and we'll just add this in really quick
+we'll<00:18:09.970><c> just</c><00:18:10.150><c> say</c><00:18:10.240><c> that</c><00:18:10.540><c> I</c><00:18:11.880><c> always</c><00:18:12.880><c> do</c><00:18:13.150><c> that</c><00:18:13.380><c> and</c>
+
+00:18:14.370 --> 00:18:14.380 align:start position:0%
+we'll just say that I always do that and
+ 
+
+00:18:14.380 --> 00:18:16.140 align:start position:0%
+we'll just say that I always do that and
+why<00:18:14.650><c> did</c><00:18:14.860><c> you</c><00:18:14.890><c> just</c><00:18:15.160><c> do</c><00:18:15.280><c> that</c><00:18:15.310><c> to</c><00:18:15.520><c> me</c>
+
+00:18:16.140 --> 00:18:16.150 align:start position:0%
+why did you just do that to me
+ 
+
+00:18:16.150 --> 00:18:19.230 align:start position:0%
+why did you just do that to me
+only<00:18:16.750><c> we're</c><00:18:16.870><c> going</c><00:18:17.020><c> to</c><00:18:17.080><c> say</c><00:18:17.200><c> that</c><00:18:17.350><c> equals</c><00:18:18.240><c> FLSA</c>
+
+00:18:19.230 --> 00:18:19.240 align:start position:0%
+only we're going to say that equals FLSA
+ 
+
+00:18:19.240 --> 00:18:20.640 align:start position:0%
+only we're going to say that equals FLSA
+a<00:18:19.270><c> that's</c><00:18:19.390><c> fine</c>
+
+00:18:20.640 --> 00:18:20.650 align:start position:0%
+a that's fine
+ 
+
+00:18:20.650 --> 00:18:24.680 align:start position:0%
+a that's fine
+okay<00:18:21.280><c> and</c><00:18:21.490><c> then</c><00:18:21.940><c> we'll</c><00:18:22.030><c> run</c><00:18:22.210><c> this</c><00:18:22.510><c> again</c>
+
+00:18:24.680 --> 00:18:24.690 align:start position:0%
+okay and then we'll run this again
+ 
+
+00:18:24.690 --> 00:18:27.330 align:start position:0%
+okay and then we'll run this again
+okay<00:18:25.690><c> Yeah</c><00:18:26.020><c> right</c><00:18:26.050><c> now</c><00:18:26.470><c> we're</c><00:18:26.530><c> missing</c><00:18:26.980><c> Guam</c>
+
+00:18:27.330 --> 00:18:27.340 align:start position:0%
+okay Yeah right now we're missing Guam
+ 
+
+00:18:27.340 --> 00:18:29.400 align:start position:0%
+okay Yeah right now we're missing Guam
+and<00:18:27.670><c> we'll</c><00:18:28.000><c> be</c><00:18:28.150><c> missing</c><00:18:28.510><c> Puerto</c><00:18:28.870><c> Rico</c><00:18:29.200><c> so</c>
+
+00:18:29.400 --> 00:18:29.410 align:start position:0%
+and we'll be missing Puerto Rico so
+ 
+
+00:18:29.410 --> 00:18:30.930 align:start position:0%
+and we'll be missing Puerto Rico so
+let's<00:18:29.560><c> just</c><00:18:29.710><c> fix</c><00:18:29.920><c> both</c><00:18:30.160><c> of</c><00:18:30.220><c> those</c><00:18:30.520><c> as</c><00:18:30.760><c> well</c>
+
+00:18:30.930 --> 00:18:30.940 align:start position:0%
+let's just fix both of those as well
+ 
+
+00:18:30.940 --> 00:18:35.930 align:start position:0%
+let's just fix both of those as well
+while<00:18:31.240><c> we're</c><00:18:31.360><c> at</c><00:18:31.570><c> it</c>
+
+00:18:35.930 --> 00:18:35.940 align:start position:0%
+ 
+ 
+
+00:18:35.940 --> 00:18:46.800 align:start position:0%
+ 
+glum<00:18:39.480><c> and</c><00:18:40.530><c> put</c><00:18:41.530><c> the</c><00:18:41.860><c> rego</c><00:18:44.760><c> and</c><00:18:45.760><c> that</c><00:18:46.540><c> should</c><00:18:46.720><c> be</c>
+
+00:18:46.800 --> 00:18:46.810 align:start position:0%
+glum and put the rego and that should be
+ 
+
+00:18:46.810 --> 00:18:48.600 align:start position:0%
+glum and put the rego and that should be
+a<00:18:46.840><c> GU</c><00:18:47.380><c> and</c><00:18:47.770><c> that</c><00:18:47.980><c> should</c><00:18:48.130><c> hopefully</c><00:18:48.310><c> be</c><00:18:48.580><c> the</c>
+
+00:18:48.600 --> 00:18:48.610 align:start position:0%
+a GU and that should hopefully be the
+ 
+
+00:18:48.610 --> 00:18:50.900 align:start position:0%
+a GU and that should hopefully be the
+only<00:18:48.850><c> hard</c><00:18:49.180><c> coding</c><00:18:49.600><c> we</c><00:18:49.750><c> have</c><00:18:49.870><c> to</c><00:18:50.080><c> actually</c><00:18:50.410><c> do</c>
+
+00:18:50.900 --> 00:18:50.910 align:start position:0%
+only hard coding we have to actually do
+ 
+
+00:18:50.910 --> 00:18:55.140 align:start position:0%
+only hard coding we have to actually do
+cool<00:18:51.910><c> okay</c><00:18:52.660><c> now</c><00:18:52.780><c> we</c><00:18:52.840><c> have</c><00:18:52.930><c> labels</c><00:18:53.440><c> so</c><00:18:54.310><c> then</c><00:18:54.640><c> we</c>
+
+00:18:55.140 --> 00:18:55.150 align:start position:0%
+cool okay now we have labels so then we
+ 
+
+00:18:55.150 --> 00:19:00.120 align:start position:0%
+cool okay now we have labels so then we
+come<00:18:56.580><c> up</c><00:18:57.580><c> here</c><00:18:58.330><c> take</c><00:18:58.750><c> this</c><00:18:59.050><c> code</c><00:18:59.410><c> here</c><00:18:59.770><c> copy</c>
+
+00:19:00.120 --> 00:19:00.130 align:start position:0%
+come up here take this code here copy
+ 
+
+00:19:00.130 --> 00:19:03.930 align:start position:0%
+come up here take this code here copy
+that<00:19:00.550><c> code</c><00:19:00.790><c> come</c><00:19:01.030><c> on</c><00:19:01.410><c> down</c><00:19:02.730><c> price</c><00:19:03.730><c> should</c><00:19:03.880><c> I</c>
+
+00:19:03.930 --> 00:19:03.940 align:start position:0%
+that code come on down price should I
+ 
+
+00:19:03.940 --> 00:19:05.870 align:start position:0%
+that code come on down price should I
+use<00:19:04.090><c> page</c><00:19:04.360><c> down</c><00:19:04.660><c> but</c><00:19:04.960><c> that's</c><00:19:05.230><c> all</c><00:19:05.410><c> right</c>
+
+00:19:05.870 --> 00:19:05.880 align:start position:0%
+use page down but that's all right
+ 
+
+00:19:05.880 --> 00:19:09.030 align:start position:0%
+use page down but that's all right
+paste<00:19:06.880><c> in</c><00:19:07.060><c> our</c><00:19:07.270><c> new</c><00:19:07.600><c> calculation</c><00:19:08.440><c> for</c><00:19:08.650><c> labels</c>
+
+00:19:09.030 --> 00:19:09.040 align:start position:0%
+paste in our new calculation for labels
+ 
+
+00:19:09.040 --> 00:19:13.710 align:start position:0%
+paste in our new calculation for labels
+and<00:19:09.310><c> show</c><00:19:10.240><c> our</c><00:19:10.540><c> beautiful</c><00:19:11.350><c> new</c><00:19:11.770><c> graph</c><00:19:12.660><c> now</c><00:19:13.660><c> we</c>
+
+00:19:13.710 --> 00:19:13.720 align:start position:0%
+and show our beautiful new graph now we
+ 
+
+00:19:13.720 --> 00:19:16.320 align:start position:0%
+and show our beautiful new graph now we
+don't<00:19:13.990><c> have</c><00:19:14.170><c> the</c><00:19:14.380><c> overlap</c><00:19:15.220><c> egde</c><00:19:15.550><c> everything</c>
+
+00:19:16.320 --> 00:19:16.330 align:start position:0%
+don't have the overlap egde everything
+ 
+
+00:19:16.330 --> 00:19:18.660 align:start position:0%
+don't have the overlap egde everything
+has<00:19:16.510><c> the</c><00:19:16.540><c> proper</c><00:19:17.110><c> name</c><00:19:17.350><c> that</c><00:19:18.130><c> looks</c><00:19:18.340><c> pretty</c>
+
+00:19:18.660 --> 00:19:18.670 align:start position:0%
+has the proper name that looks pretty
+ 
+
+00:19:18.670 --> 00:19:22.710 align:start position:0%
+has the proper name that looks pretty
+good<00:19:18.940><c> we</c><00:19:19.480><c> did</c><00:19:19.810><c> it</c><00:19:20.250><c> okay</c><00:19:21.250><c> so</c><00:19:22.030><c> I</c><00:19:22.330><c> think</c><00:19:22.390><c> that's</c><00:19:22.600><c> an</c>
+
+00:19:22.710 --> 00:19:22.720 align:start position:0%
+good we did it okay so I think that's an
+ 
+
+00:19:22.720 --> 00:19:24.810 align:start position:0%
+good we did it okay so I think that's an
+okay<00:19:23.110><c> stopping</c><00:19:23.620><c> point</c><00:19:23.890><c> and</c><00:19:23.980><c> we've</c><00:19:24.670><c> actually</c>
+
+00:19:24.810 --> 00:19:24.820 align:start position:0%
+okay stopping point and we've actually
+ 
+
+00:19:24.820 --> 00:19:26.460 align:start position:0%
+okay stopping point and we've actually
+covered<00:19:25.030><c> quite</c><00:19:25.270><c> a</c><00:19:25.360><c> bit</c><00:19:25.420><c> with</c><00:19:25.960><c> like</c><00:19:26.170><c> the</c><00:19:26.290><c> read</c>
+
+00:19:26.460 --> 00:19:26.470 align:start position:0%
+covered quite a bit with like the read
+ 
+
+00:19:26.470 --> 00:19:28.950 align:start position:0%
+covered quite a bit with like the read
+HTML<00:19:27.160><c> and</c><00:19:27.550><c> fixing</c><00:19:27.910><c> a</c><00:19:27.970><c> bunch</c><00:19:28.120><c> of</c><00:19:28.210><c> stuff</c><00:19:28.450><c> and</c>
+
+00:19:28.950 --> 00:19:28.960 align:start position:0%
+HTML and fixing a bunch of stuff and
+ 
+
+00:19:28.960 --> 00:19:29.520 align:start position:0%
+HTML and fixing a bunch of stuff and
+yeah
+
+00:19:29.520 --> 00:19:29.530 align:start position:0%
+yeah
+ 
+
+00:19:29.530 --> 00:19:31.350 align:start position:0%
+yeah
+so<00:19:29.680><c> pretty</c><00:19:29.950><c> cool</c><00:19:30.160><c> so</c><00:19:30.820><c> I</c><00:19:30.850><c> think</c><00:19:30.940><c> in</c><00:19:31.150><c> the</c><00:19:31.210><c> next</c>
+
+00:19:31.350 --> 00:19:31.360 align:start position:0%
+so pretty cool so I think in the next
+ 
+
+00:19:31.360 --> 00:19:33.540 align:start position:0%
+so pretty cool so I think in the next
+tutorial<00:19:31.990><c> what</c><00:19:32.170><c> I'd</c><00:19:32.260><c> like</c><00:19:32.410><c> to</c><00:19:32.470><c> do</c><00:19:32.890><c> is</c><00:19:33.250><c> we</c><00:19:33.460><c> have</c>
+
+00:19:33.540 --> 00:19:33.550 align:start position:0%
+tutorial what I'd like to do is we have
+ 
+
+00:19:33.550 --> 00:19:36.090 align:start position:0%
+tutorial what I'd like to do is we have
+minimum<00:19:33.910><c> wage</c><00:19:34.150><c> data</c><00:19:34.510><c> we</c><00:19:35.140><c> can</c><00:19:35.350><c> begin</c><00:19:35.650><c> to</c><00:19:35.800><c> like</c>
+
+00:19:36.090 --> 00:19:36.100 align:start position:0%
+minimum wage data we can begin to like
+ 
+
+00:19:36.100 --> 00:19:38.220 align:start position:0%
+minimum wage data we can begin to like
+compare<00:19:36.550><c> data</c><00:19:36.760><c> sets</c><00:19:37.060><c> and</c><00:19:37.330><c> like</c><00:19:37.570><c> look</c><00:19:37.840><c> at</c><00:19:37.990><c> data</c>
+
+00:19:38.220 --> 00:19:38.230 align:start position:0%
+compare data sets and like look at data
+ 
+
+00:19:38.230 --> 00:19:40.440 align:start position:0%
+compare data sets and like look at data
+between<00:19:38.470><c> multiple</c><00:19:39.130><c> data</c><00:19:39.340><c> sets</c><00:19:39.550><c> and</c><00:19:39.820><c> try</c><00:19:40.390><c> to</c>
+
+00:19:40.440 --> 00:19:40.450 align:start position:0%
+between multiple data sets and try to
+ 
+
+00:19:40.450 --> 00:19:43.710 align:start position:0%
+between multiple data sets and try to
+derive<00:19:40.840><c> meaning</c><00:19:41.140><c> in</c><00:19:41.440><c> some</c><00:19:41.650><c> some</c><00:19:42.310><c> way</c><00:19:42.720><c> we're</c>
+
+00:19:43.710 --> 00:19:43.720 align:start position:0%
+derive meaning in some some way we're
+ 
+
+00:19:43.720 --> 00:19:45.030 align:start position:0%
+derive meaning in some some way we're
+probably<00:19:43.870><c> not</c><00:19:44.050><c> going</c><00:19:44.140><c> to</c><00:19:44.200><c> find</c><00:19:44.410><c> out</c><00:19:44.530><c> anything</c>
+
+00:19:45.030 --> 00:19:45.040 align:start position:0%
+probably not going to find out anything
+ 
+
+00:19:45.040 --> 00:19:47.970 align:start position:0%
+probably not going to find out anything
+too<00:19:45.310><c> spectacular</c><00:19:46.380><c> but</c><00:19:47.380><c> it'll</c><00:19:47.590><c> give</c><00:19:47.710><c> us</c><00:19:47.740><c> a</c><00:19:47.890><c> good</c>
+
+00:19:47.970 --> 00:19:47.980 align:start position:0%
+too spectacular but it'll give us a good
+ 
+
+00:19:47.980 --> 00:19:50.370 align:start position:0%
+too spectacular but it'll give us a good
+opportunity<00:19:48.250><c> to</c><00:19:48.610><c> just</c><00:19:49.060><c> kind</c><00:19:49.240><c> of</c><00:19:49.300><c> bring</c><00:19:50.200><c> in</c>
+
+00:19:50.370 --> 00:19:50.380 align:start position:0%
+opportunity to just kind of bring in
+ 
+
+00:19:50.380 --> 00:19:52.440 align:start position:0%
+opportunity to just kind of bring in
+more<00:19:50.560><c> outside</c><00:19:51.130><c> in</c><00:19:51.370><c> different</c><00:19:51.850><c> data</c><00:19:52.090><c> sets</c><00:19:52.330><c> that</c>
+
+00:19:52.440 --> 00:19:52.450 align:start position:0%
+more outside in different data sets that
+ 
+
+00:19:52.450 --> 00:19:53.610 align:start position:0%
+more outside in different data sets that
+actually<00:19:52.900><c> aren't</c><00:19:53.110><c> even</c>
+
+00:19:53.610 --> 00:19:53.620 align:start position:0%
+actually aren't even
+ 
+
+00:19:53.620 --> 00:19:54.480 align:start position:0%
+actually aren't even
+from<00:19:53.770><c> the</c><00:19:53.950><c> saying</c><00:19:54.160><c> because</c><00:19:54.250><c> it's</c><00:19:54.400><c> like</c>
+
+00:19:54.480 --> 00:19:54.490 align:start position:0%
+from the saying because it's like
+ 
+
+00:19:54.490 --> 00:19:56.490 align:start position:0%
+from the saying because it's like
+sometimes<00:19:54.880><c> you're</c><00:19:54.970><c> gonna</c><00:19:55.059><c> find</c><00:19:55.360><c> you've</c><00:19:56.350><c> got</c>
+
+00:19:56.490 --> 00:19:56.500 align:start position:0%
+sometimes you're gonna find you've got
+ 
+
+00:19:56.500 --> 00:19:57.960 align:start position:0%
+sometimes you're gonna find you've got
+one<00:19:56.710><c> data</c><00:19:56.890><c> set</c><00:19:57.100><c> from</c><00:19:57.220><c> over</c><00:19:57.490><c> here</c><00:19:57.700><c> and</c><00:19:57.880><c> it's</c>
+
+00:19:57.960 --> 00:19:57.970 align:start position:0%
+one data set from over here and it's
+ 
+
+00:19:57.970 --> 00:19:59.910 align:start position:0%
+one data set from over here and it's
+like<00:19:58.150><c> from</c><00:19:58.360><c> one</c><00:19:58.570><c> totally</c><00:19:59.260><c> different</c><00:19:59.590><c> provider</c>
+
+00:19:59.910 --> 00:19:59.920 align:start position:0%
+like from one totally different provider
+ 
+
+00:19:59.920 --> 00:20:01.680 align:start position:0%
+like from one totally different provider
+they've<00:20:00.520><c> got</c><00:20:00.640><c> another</c><00:20:01.000><c> one</c><00:20:01.300><c> and</c><00:20:01.540><c> then</c>
+
+00:20:01.680 --> 00:20:01.690 align:start position:0%
+they've got another one and then
+ 
+
+00:20:01.690 --> 00:20:03.270 align:start position:0%
+they've got another one and then
+sometimes<00:20:02.110><c> they're</c><00:20:02.320><c> not</c><00:20:02.350><c> even</c><00:20:02.470><c> organized</c><00:20:03.040><c> by</c>
+
+00:20:03.270 --> 00:20:03.280 align:start position:0%
+sometimes they're not even organized by
+ 
+
+00:20:03.280 --> 00:20:05.310 align:start position:0%
+sometimes they're not even organized by
+either<00:20:03.580><c> maybe</c><00:20:04.059><c> not</c><00:20:04.330><c> the</c><00:20:04.510><c> same</c><00:20:04.630><c> index</c><00:20:05.080><c> or</c><00:20:05.290><c> a</c>
+
+00:20:05.310 --> 00:20:05.320 align:start position:0%
+either maybe not the same index or a
+ 
+
+00:20:05.320 --> 00:20:06.810 align:start position:0%
+either maybe not the same index or a
+different<00:20:05.860><c> type</c><00:20:06.010><c> of</c><00:20:06.040><c> index</c><00:20:06.490><c> or</c><00:20:06.670><c> like</c><00:20:06.790><c> a</c>
+
+00:20:06.810 --> 00:20:06.820 align:start position:0%
+different type of index or like a
+ 
+
+00:20:06.820 --> 00:20:08.670 align:start position:0%
+different type of index or like a
+different<00:20:07.210><c> granularity</c><00:20:07.960><c> and</c><00:20:08.050><c> so</c><00:20:08.290><c> on</c><00:20:08.440><c> so</c>
+
+00:20:08.670 --> 00:20:08.680 align:start position:0%
+different granularity and so on so
+ 
+
+00:20:08.680 --> 00:20:10.860 align:start position:0%
+different granularity and so on so
+anyways<00:20:09.520><c> we're</c><00:20:09.700><c> gonna</c><00:20:09.790><c> get</c><00:20:10.059><c> a</c><00:20:10.090><c> little</c><00:20:10.540><c> Messier</c>
+
+00:20:10.860 --> 00:20:10.870 align:start position:0%
+anyways we're gonna get a little Messier
+ 
+
+00:20:10.870 --> 00:20:12.960 align:start position:0%
+anyways we're gonna get a little Messier
+in<00:20:11.050><c> the</c><00:20:11.140><c> next</c><00:20:11.410><c> video</c>
+
+00:20:12.960 --> 00:20:12.970 align:start position:0%
+in the next video
+ 
+
+00:20:12.970 --> 00:20:15.240 align:start position:0%
+in the next video
+maybe<00:20:13.900><c> contain</c><00:20:14.320><c> that</c><00:20:14.500><c> all</c><00:20:14.650><c> in</c><00:20:14.830><c> one</c><00:20:14.980><c> and</c><00:20:15.130><c> then</c>
+
+00:20:15.240 --> 00:20:15.250 align:start position:0%
+maybe contain that all in one and then
+ 
+
+00:20:15.250 --> 00:20:16.799 align:start position:0%
+maybe contain that all in one and then
+hopefully<00:20:15.580><c> right</c><00:20:16.150><c> after</c><00:20:16.330><c> that</c><00:20:16.480><c> we'll</c><00:20:16.630><c> get</c>
+
+00:20:16.799 --> 00:20:16.809 align:start position:0%
+hopefully right after that we'll get
+ 
+
+00:20:16.809 --> 00:20:18.360 align:start position:0%
+hopefully right after that we'll get
+into<00:20:16.990><c> doing</c><00:20:17.380><c> some</c><00:20:17.590><c> machine</c><00:20:17.890><c> learning</c><00:20:17.920><c> just</c>
+
+00:20:18.360 --> 00:20:18.370 align:start position:0%
+into doing some machine learning just
+ 
+
+00:20:18.370 --> 00:20:20.400 align:start position:0%
+into doing some machine learning just
+real<00:20:18.670><c> basic</c><00:20:18.910><c> example</c><00:20:19.809><c> of</c><00:20:19.900><c> machine</c><00:20:20.110><c> learning</c>
+
+00:20:20.400 --> 00:20:20.410 align:start position:0%
+real basic example of machine learning
+ 
+
+00:20:20.410 --> 00:20:23.580 align:start position:0%
+real basic example of machine learning
+with<00:20:21.340><c> pandas</c><00:20:21.700><c> so</c><00:20:21.790><c> anyways</c><00:20:22.540><c> that's</c><00:20:23.110><c> it</c><00:20:23.290><c> for</c><00:20:23.350><c> now</c>
+
+00:20:23.580 --> 00:20:23.590 align:start position:0%
+with pandas so anyways that's it for now
+ 
+
+00:20:23.590 --> 00:20:25.950 align:start position:0%
+with pandas so anyways that's it for now
+questions<00:20:24.580><c> comments</c><00:20:25.090><c> concerns</c><00:20:25.120><c> whatever</c>
+
+00:20:25.950 --> 00:20:25.960 align:start position:0%
+questions comments concerns whatever
+ 
+
+00:20:25.960 --> 00:20:27.390 align:start position:0%
+questions comments concerns whatever
+feel<00:20:26.350><c> free</c><00:20:26.530><c> to</c><00:20:26.559><c> leave</c><00:20:26.740><c> them</c><00:20:26.860><c> below</c><00:20:26.920><c> as</c><00:20:27.370><c> always</c>
+
+00:20:27.390 --> 00:20:27.400 align:start position:0%
+feel free to leave them below as always
+ 
+
+00:20:27.400 --> 00:20:29.310 align:start position:0%
+feel free to leave them below as always
+thanks<00:20:27.970><c> for</c><00:20:28.000><c> watching</c><00:20:28.179><c> thanks</c><00:20:29.080><c> for</c><00:20:29.230><c> the</c>
+
+00:20:29.310 --> 00:20:29.320 align:start position:0%
+thanks for watching thanks for the
+ 
+
+00:20:29.320 --> 00:20:31.049 align:start position:0%
+thanks for watching thanks for the
+support<00:20:29.650><c> the</c><00:20:29.830><c> subscriptions</c><00:20:30.370><c> the</c><00:20:30.520><c> donations</c>
+
+00:20:31.049 --> 00:20:31.059 align:start position:0%
+support the subscriptions the donations
+ 
+
+00:20:31.059 --> 00:20:33.330 align:start position:0%
+support the subscriptions the donations
+the<00:20:31.240><c> memberships</c><00:20:31.809><c> all</c><00:20:31.929><c> the</c><00:20:32.230><c> good</c><00:20:32.380><c> stuff</c><00:20:32.650><c> and</c><00:20:32.890><c> I</c>
+
+00:20:33.330 --> 00:20:33.340 align:start position:0%
+the memberships all the good stuff and I
+ 
+
+00:20:33.340 --> 00:20:37.440 align:start position:0%
+the memberships all the good stuff and I
+will<00:20:33.490><c> see</c><00:20:33.610><c> you</c><00:20:33.730><c> guys</c><00:20:33.760><c> in</c><00:20:34.390><c> another</c><00:20:34.960><c> video</c>
+
